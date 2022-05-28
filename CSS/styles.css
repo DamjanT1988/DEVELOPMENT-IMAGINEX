@@ -18,7 +18,7 @@ body {
     line-height: 1.3em;
     padding: 1.25%;
     max-width: 960px;
-    padding-top: 2%;
+    padding-top: 20%;
 }
 
 /*HEADER*/
@@ -32,10 +32,10 @@ header {
 
 .logo {
     float: left;
-    max-width: 17%;
+    max-width: 15%;
     position: relative;
     padding-right: 3%;
-    padding-top: 2.5%;
+    padding-top: 0%;
     border-radius: 0px;
     margin-left: 0%;
 }
@@ -43,7 +43,6 @@ header {
 /*BILDER*/
 img {
     max-width: 100%;
-    /*margin-left: -7%;*/
 }
 
 figure {
@@ -53,19 +52,18 @@ figure {
 /*SÖKRUTA & LOGOTYP*/
 
 .banner {
-    position: relative; 
+    position: absolute; 
     top: 0; 
     left: 0; 
       
-    /* Preserve aspet ratio */
-    min-width: 100%;
+   min-width: 100%;
+    max-height: 40%;
   } 
 /*    float: none;
    max-width: 200%;
     background-size: auto;
     border-radius: 0%;
 }*/
-
 
 .button1 {
     background-color: #ffcc00;
@@ -304,6 +302,15 @@ footer {
         max-width: 100%;
     }
 
+    .wrapperkropp {
+        background-color: #ffdfca;
+        max-width: 960px;
+        margin: 0 auto;
+        line-height: 1.3em;
+        padding: 1.25%;
+        max-width: 960px;
+        padding-top: 25%;
+    }
 
     nav ul li {
         background-color: #89a52c;

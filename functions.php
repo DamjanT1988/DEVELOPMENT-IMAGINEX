@@ -15,7 +15,7 @@ function register_my_menus()
 $args = array(
     'width' => 1920,
     'height' => 400,
-    'default-image' => get_template_directory_uri() . '/images/header.jpg',
+    'default-image' => get_template_directory_uri() . '/IMAGES/HEADER.jpg',
     'uploads' => true
 );
 
