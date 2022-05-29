@@ -31,14 +31,13 @@
             ?>
             
                         <h3><?= the_title(); ?><br><?= get_the_date(); ?></h3>
-                        <?php //$content = get_the_content();
-                        //echo mb_strimwidth($content, 0, 600, '...'); 
+                        <?php 
                         if(has_post_thumbnail()) {
                             the_post_thumbnail();
                         }
                         the_excerpt();?>
 
-                        <a href="<?= the_permalink(); ?>" class="button1" >LÄS MER</a>
+                        <a href="<?= the_permalink(); ?>" class="button1" >LÄS MER >></a>
                         
                         <br><br>
                     <hr>

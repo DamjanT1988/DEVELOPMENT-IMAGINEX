@@ -30,6 +30,7 @@
         <a href="#home" class="active"></a>
         <!--Navigation links (hidden by default) -->
         <div id="myLinks">
+         
           <?php wp_nav_menu(array('menu' => 'main-menu')); ?>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->

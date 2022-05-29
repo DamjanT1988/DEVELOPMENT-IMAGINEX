@@ -18,7 +18,7 @@ body {
     line-height: 1.3em;
     padding: 1.25%;
     max-width: 960px;
-    padding-top: 20%;
+    padding-top: 17%;
 }
 
 /*HEADER*/
@@ -66,11 +66,13 @@ figure {
 }*/
 
 .button1 {
-    background-color: #ffcc00;
-    color: black;
+    background-color: #f07f35;
+    color: white;
     font-size: 1.2EM;
-    padding-bottom: 5px;
-    padding-top: 3px;
+    padding-bottom: 17px;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-weight: bold;
     border-radius: 15%;
 }
@@ -78,12 +80,12 @@ figure {
 /*HUVUDNAVIGATION*/
 nav {
     text-transform: uppercase;
-    padding-top: 2%;
+    margin-top: 2%;
     padding-left: 0%;
-    font-size: 1em;
+    font-size: 1.5em;
     float: none;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    width: 10%;
     color: #000;
     font-weight: bold;
     padding: 0%;
@@ -91,7 +93,7 @@ nav {
 
 
 nav ul li {
-    background-color: #ffcc00;
+/*    background-color: #ffcc00;*/
     padding: 0%;
     color: black;
     border-color: black;
@@ -100,7 +102,7 @@ nav ul li {
 
 
 hr {
-    color: #89a52c;
+    color: #ffcc00;
     height: 0px;
     border-style: solid;
     border-width: 6px;
@@ -215,13 +217,11 @@ iframe {
 /*RUBRIKJUSTERINGAR*/
 h1 {
     font-size: 2.25em;
-    margin-left: 22%;
-    line-height: 1.25em;
-    
+    margin-left: 0%;
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 h3 {
@@ -230,6 +230,8 @@ h3 {
 
 p, h1, h2, h3, nav {
     font-family: Arial, sans-serif;
+    font-weight: bolder;
+    line-height: 1.5em;
 }
 
 /*LÄNKFÄRGER JUSTERAS*/
@@ -271,7 +273,7 @@ footer {
     line-height: 1.75em;
     padding: 0%;
     margin-top: 5%;
-    border: solid #89a52c;
+    border: solid #ffcc00;
     border-width: 10px;
     color: black;
 }
