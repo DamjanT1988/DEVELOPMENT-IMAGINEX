@@ -1,46 +1,36 @@
-# MOMENT 3 - CMS
+# PROJEKT DI197G
 
-Syftet med uppgiften är att:
+Projektet är den sista momentet is kursen ”Webbdesign för CMS” där målet är att an-vända förvärvade kunskaper och kompetenser från tidigare kursen och denna för att skapa en företagswebbplats som är ett dynamiskt CMS-system baserat i Wordpress.
 
-    Lära sig grunderna om CMS, och hur det kan underlätta utveckling och underhåll/uppdatering.
-    Förstå hur WordPress installeras och fungerar.
-    Kunna skapa en färdig dynamisk webbplats utifrån en given design.
-    Kunna publicera en WordPress-webbplats med ett egenutvecklat tema.
-    Förstå och kunna optimera sökmotoroptimering (SEO) för webbplatser.
+##	Syfte och mål
+Målet är att skapa en företagswebbplats som ska presentera företagets tjänster och er-bjudanden med funktioner att kunna nyttja och boka eller beställa tjänster som boende och fritidsaktiviteter via webbplatsen samt att personalen ska dynamiskt administrera webbplatsen genom Wordpress-panel. Med det här som mål är syften många:
 
-## GRUNDLÄGGANDE FUNKTIONELLA KRAV
+* Planera och skapa webbdesign för en webbplats med en tänkt målgrupp.
+* Utforma design och designdokument på ett sådant sätt att det enkelt går att över-föra till HTML/CSS/JavaScript.
+* Skapa en användbar och tillgänglig webbplats enligt grundläggande UX och UI principer med målsättning att uppfylla WCAG.
+* Ge webbplatsen möjlighet till dynamisk uppdatering/underhåll med hjälp av ett CMS som grund.
+* Implementera tillägg och liknande som behövs för att driva den färdiga webb-platsen.
+* Skapa användare som med lämpliga behörighetsroller som kan uppda-tera/underhålla webbplatsen.
+* Skapa en strategi för samt implementera SEO (Sökmotoroptimering) för webb-platsen.
+* Planera inför migration (flytt mellan servrar) och backup.
 
-Följande ska vara uppfyllt för att laborationen ska anses som godkänd:
+##	Bakgrund och problem
+Webbplatsen ska innefatta många olika typer av funktioner som måste vara dynamiska med Wordpress som i ett CMS-system. Webbplatsen ska helt kunna administreras av icke-teknisk personal snabbt och enkelt. De funktionalitet som krävs är:
 
-    Helt egenutvecklat fristående och korrekt utformat WordPress-tema (ej child-tema).
-    Inloggning för (minst) två typer av användar-roller.
-    Möjlighet att skriva nyheter med utvald bild.
-    Olika mallar/sidtyper för undersidor. Det ska även gå att skapa undersidor utan mall.
-    Kontaktforumlär.
-    Möjlighet att använda plugins.
-    Minst en widget-area.
-    Möjlighet att administrera sökmotoroptimering (SEO) med hjälp av plugin.
-    Statistik över webbplatsens besökare.
-    Korrekt utformad och kommenterad HTML-, CSS- och PHP-kod, förslagsvis utformad i enlighet med WordPress coding standard.
+* Möjlighet att lägga till undersidor till din webbplats (med olika sidtyper).
+* Presentation av företagets olika boenden och olika tjänster / aktiviteter (skidåk-ning, forsränning, spa, massage etcetera).
+* Möjlighet att på startsidan lyfta viktiga saker (exempelvis kommande aktiviteter, erbjudanden eller liknande) - så kallade "puffar".
+* Nyhetsfunktionalitet, med "utvald bild" / "featured image".
+* Presentation och kontakt-information till företagets nyckelpersoner.
 
-## ÖVERGRIPANDE KRAV - BESKRIVNING
-Din uppgift är att skapa en dynamisk webbplats med WordPress som grund, utifrån en given design
+## Fiktivt företag och användningsbehov
+Det fiktiva företaget ”Karlstads Moderna Vandrarhem & Restaurang AB” vill skapa en dynamisk webbplats som en utökad del av sin vandrarhem- och restaurangverksamhet i centrala Karlstad. Företaget grundades år 2018 med en av grundarna är utvecklaren av webbplatsen. Varumärket heter ”Karlstads V&R” är namnet på verksamheten.
+Karlstas V&R vill presentera sin hela sitt utbud av tjänster online där besökare kan boka boende och boka bord samt boka fritidsaktiviteter. Gäster ska även kunna beställa ”Take Aways”. Personalen ska ha tillgång till hela webbplatsen för att ändra priser, tjänster och menyalternativ samt ändra bokningsalternativ. Personalen är icke-teknisk som vill ad-ministrera allt ovanstående via Wordpress-panel. 
 
-Använd den webbplats du skapade i Moment 1.2 som grund, och anpassa denna till att använda WordPress som innehållshanterare.
+Företaget vill ha en enklare webbplats till design samt också ha en enklare grafisk design med logotyp. Webbplatsen ska se modern ut med tillgänglighet på olika enheter och skärmstorlekar – i synnerhet mobila enheter eftersom de flesta som befinner sig på plats använder mobilen.
+Tjänster som erbjuds av Modern V&R:
+* Hyr ut boende i olika storlek
+* Säljer mat och dryck i sin restauranglokal (i samma hus som vandrarhem)
+* Säljer fritidsaktiviteter som vandringsturer och sightseeing
 
-Webbplatsen skall ha inloggning för två typer av användare, systemaministratörer och redaktör (editor). Administratörer skall ha full tillgång till webbplatsen och all funktionalitet.
-Den andra användaren skall ha ett passande namn och tillgång till att uppdatera utvalda delar. Denna användare skall inte kunna uppdatera version av Wordpress-installation, eller skapa nya användare. Inloggningsuppgifter för dessa användare skickas med vid inlämning, så dessa går att testköra.
-
-Temat ska vara så konstruerat att användare utan kunskap av HTML och CSS ska kunna sköta webbplatsen. Temat ska inte förlita sig på att HTML-kod skrivs in från editorn i wp-admin, så undvik detta.
-
-Installera även de plugin som behövs för webbplatsen, eller kan vara lämpliga på annat sätt. 
-
-### LISTA
-    Olika mallar (heter "template" på engelsk installation) i ditt tema. Kan vara exempelvis med eller utan sidebar, olika antal spalter eller liknande. Döp dessa till lämpliga namn, så den person som ska uppdatera webbplatsen längre fram enkelt förstår vilken som är vilken. Se exempel i figuren här under.
-    Kontaktformulär
-    Möjlighet att skriva nyheter, som summeras (med avkortad text, så kallad "excerpt") på lämpligt ställe och visas i helhet vid klick på "Läs mer"-länk.
-    Möjlighet att använda plugins och widgets
-    Möjlighet att enkelt kunna administrera och sköta SEO, sökmotor-optimering.
-    Statistik över webbplatsens besökare, lagrad med exempelvis Google Analytics eller något annat. En liten lista över olika verktyg för statistik i WordPress finns här.
-    Övrig funktionalitet som du finner lämplig för webbplatsen.
-
+Primära målgruppen är således gäster och personalen.
