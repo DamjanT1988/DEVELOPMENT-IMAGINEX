@@ -15,7 +15,7 @@ body {
     background-color: #ffdfca;
     max-width: 960px;
     margin: 0 auto;
-    line-height: 1.3em;
+    line-height: 1.5em;
     padding: 1.25%;
     max-width: 960px;
     padding-top: 17%;
@@ -37,7 +37,7 @@ header {
     padding-right: 3%;
     padding-top: 0%;
     border-radius: 0px;
-    margin-left: 0%;
+    padding-left: 3%;
 }
 
 /*BILDER*/
@@ -80,24 +80,24 @@ figure {
 /*HUVUDNAVIGATION*/
 nav {
     text-transform: uppercase;
-    margin-top: 2%;
+    margin-top: 0%;
     padding-left: 0%;
-    font-size: 1.5em;
-    float: none;
+    font-size: 1.1em;
+    float: left;
     position: fixed;
     width: 10%;
     color: #000;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 0%;
 }
 
 
 nav ul li {
 /*    background-color: #ffcc00;*/
-    padding: 0%;
+    padding-bottom: 12.5%;
     color: black;
     border-color: black;
-    font-size: 0.8em;
+/*    font-size: 0.5em;*/
 }
 
 
@@ -117,9 +117,10 @@ hr {
     min-width: 15%;
     min-height: 100%;
     margin: 0 auto;
-    line-height: 1.3em;
+    line-height: 1.5em;
     padding: 0%;
     float: left;
+    margin-left: -2%;
 }
 
 .container1-1 {
@@ -128,12 +129,16 @@ hr {
     float: left;
     background-color: #ffcc00;
     font-weight: 450;
-    padding-left: 1%;
+    padding-left: 0%;
     line-height: 3em;
     color: white
 }
 
 
+/*FORMULÄR*/
+input {
+    font-size: 0.85em;
+}
 
 /*KONTAKTSIDAN*/
 
@@ -147,7 +152,7 @@ form {
 
 fieldset {
     border: 3px solid;
-    border-color: #89a52c;
+    border-color: #fff600;
     color: black;
     background-color: white;
     position: relative;
@@ -156,28 +161,30 @@ fieldset {
 }
 
 legend {
-    color: white;
+    color: black;
     font-size: 1.5em;
-    background-color: #89a52c;
+    background-color: #fff600;
     position: absolute;
     top: -2px;
     left: 30%;
 }
 
-.gmap_canvas, .mapouter {
-    border-radius: 35px;
-    padding-bottom: 3%;
-}
 
 input[type=submit], input[type=reset], select {
     padding: 5px 5px;
-    background-color: #f07f35;
+    background-color: #fc6f14;
     color: #fff;
     font-weight: bold;
     border: 0 none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 26px;
+}
+
+/*
+.gmap_canvas, .mapouter {
+    border-radius: 35px;
+    padding-bottom: 3%;
 }
 
 .mapouter {
@@ -204,7 +211,7 @@ iframe {
     max-width: 670PX;
     height: 325PX;
 }
-
+*/
 
 /*ALLA SIDOR*/
 .wrapper5 {
@@ -217,7 +224,7 @@ iframe {
 /*RUBRIKJUSTERINGAR*/
 h1 {
     font-size: 2.25em;
-    margin-left: 0%;
+    margin-left: 22%;
 }
 
 h2 {
@@ -264,7 +271,7 @@ a:hover {
 /*SIDFOT JUSTERAS*/
 
 footer {
-    width: 98%;
+    width: 68%;
     position: relative;
     text-align: center;
     justify-content: center;
@@ -276,6 +283,7 @@ footer {
     border: solid #ffcc00;
     border-width: 10px;
     color: black;
+    margin-left: 22%;
 }
 
 #footer1 {
@@ -283,10 +291,6 @@ footer {
     padding-left: 5%;
 }
 
-#footer3 {
-    margin-left: 10%;
-    padding-right: 5%;
-}
 
 #footer2 p a {
     color: black;

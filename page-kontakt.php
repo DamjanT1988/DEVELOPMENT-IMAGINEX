@@ -7,7 +7,6 @@
 <!--contact form-->
         
             <fieldset>
-                <legend>Kontaktfomulär</legend>
 <!--wp print-->
                 <?php
                 if (have_posts()) {

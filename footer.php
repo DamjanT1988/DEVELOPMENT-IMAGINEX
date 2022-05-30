@@ -19,6 +19,7 @@
             </div>
         <?php endif; ?>
     </div>
+<!--
     <div id="footer3">
         <?php if (is_active_sidebar('footer3')) : ?>
             <div>
@@ -26,6 +27,7 @@
             </div>
         <?php endif; ?>
     </div>
+-->
 </footer>
 <?php wp_footer(); ?>
 </div>
