@@ -3,21 +3,17 @@
 
 
 <div class="wrapper5">
-    <section>
-<!--contact form-->
-        
-            <fieldset>
+  <section>
 <!--wp print-->
-                <?php
-                if (have_posts()) {
-                    the_content();
-                }
-                ?>
-            </fieldset>
-        
+    <article>
+      <?php
+      if (have_posts()) {
+        the_content();
+      }
+      ?>
+    </article>
 
-
-    </section>
+  </section>
 </div>
 
 
