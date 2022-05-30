@@ -66,7 +66,7 @@ figure {
 }*/
 
 .button1 {
-    background-color: #f07f35;
+    background-color: #fc6f14;
     color: white;
     font-size: 1.2EM;
     padding-bottom: 17px;
@@ -80,7 +80,7 @@ figure {
 /*HUVUDNAVIGATION*/
 nav {
     text-transform: uppercase;
-    margin-top: 0%;
+    margin-top: -5%;
     padding-left: 0%;
     font-size: 1.1em;
     float: left;
@@ -102,7 +102,7 @@ nav ul li {
 
 
 hr {
-    color: #ffcc00;
+    color: #fc6f14;
     height: 0px;
     border-style: solid;
     border-width: 6px;
@@ -152,7 +152,7 @@ form {
 
 fieldset {
     border: 3px solid;
-    border-color: #fff600;
+    border-color: #fc6f14;
     color: black;
     background-color: white;
     position: relative;
@@ -163,7 +163,7 @@ fieldset {
 legend {
     color: black;
     font-size: 1.5em;
-    background-color: #fff600;
+    background-color: #fc6f14;
     position: absolute;
     top: -2px;
     left: 30%;
@@ -280,7 +280,7 @@ footer {
     line-height: 1.75em;
     padding: 0%;
     margin-top: 5%;
-    border: solid #ffcc00;
+    border: solid #fc6f14;
     border-width: 10px;
     color: black;
     margin-left: 22%;

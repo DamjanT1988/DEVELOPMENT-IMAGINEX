@@ -21,7 +21,7 @@
 
 <body>
 <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="bannerbild med träd" class="banner">
-<a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.SVG" class="logo" alt="logotyp av SKOG AB" /></a>
+<a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.svg" class="logo" alt="logotyp av Kalrstads Vandringshem & Restaurang" /></a>
 <div class="wrapperkropp">
 
     <!--sidhuvud med navigation & logotyp & sökruta med knapp-->
