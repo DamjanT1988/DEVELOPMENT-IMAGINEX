@@ -22,9 +22,9 @@ Template Name: New page with widget
 
 <!--widget-->
         <?php
-        if (is_active_sidebar('skog')) : ?>
-            <div id="skog">
-                <?php dynamic_sidebar('skog'); ?>
+        if (is_active_sidebar('hem')) : ?>
+            <div id="hem">
+                <?php dynamic_sidebar('hem'); ?>
             </div>
         <?php endif; ?>
 

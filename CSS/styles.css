@@ -18,7 +18,7 @@ body {
     line-height: 1.5em;
     padding: 1.25%;
     max-width: 960px;
-    padding-top: 17%;
+    padding-top: 16.5%;
 }
 
 /*HEADER*/
@@ -80,7 +80,7 @@ figure {
 /*HUVUDNAVIGATION*/
 nav {
     text-transform: uppercase;
-    margin-top: -5%;
+    margin-top: -3%;
     padding-left: 0%;
     font-size: 1.1em;
     float: left;

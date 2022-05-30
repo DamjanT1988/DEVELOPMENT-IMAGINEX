@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contac page with map
+Template Name: Page with Google map
 */
 
 ?>
