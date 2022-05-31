@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <div class="wrapper5">
   <section>
 <!--wp print-->
@@ -15,8 +13,5 @@
 
   </section>
 </div>
-
-
-
 
 <?php get_footer(); ?>
