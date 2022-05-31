@@ -33,6 +33,15 @@
 </div>
 
 <!--script for mobile menu-->
-<script src="JS/main.js"></script>
+<script >
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
 
 </body>

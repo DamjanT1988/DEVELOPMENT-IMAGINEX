@@ -22,7 +22,7 @@
     <section>
         <!--wp print of posts-->
         <article>
-            <h2>Senaste nytt:</h2>
+            <h2>Läs det senaste om oss:</h2>
             <?php
             query_posts('posts_per_page=2');
             if (have_posts()) {

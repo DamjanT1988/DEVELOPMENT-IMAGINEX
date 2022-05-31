@@ -105,7 +105,7 @@ hr {
     color: #fc6f14;
     height: 0px;
     border-style: solid;
-    border-width: 6px;
+    border-width: 4 px;
     margin-top: 0%;
     max-width: 100%;
 }
@@ -181,6 +181,10 @@ input[type=submit], input[type=reset], select {
     font-size: 26px;
 }
 
+textarea {
+    font-size: 1.2em;
+}
+
 /*
 .gmap_canvas, .mapouter {
     border-radius: 35px;
@@ -228,7 +232,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 
 h3 {
@@ -377,7 +381,7 @@ footer {
 @media only screen and (max-width: 664px) and (orientation: portrait) {
 
     body {
-        background-color: white;
+        background-color: #ffdfca;
     }
 
     .wrapperkropp {
@@ -385,7 +389,7 @@ footer {
         position: relative;
         padding-left: 0%;
         padding-right: 0%;
-        padding-top: 10%;
+        padding-top: 0%;
     }
 
 
@@ -393,11 +397,12 @@ footer {
 
     .logo {
         float:none;
-        max-width: 25%;
+        max-width: 40%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        z-index: 2;
     }
 
     .banner {
@@ -418,7 +423,7 @@ header {
 
 
 hr {
-    color: #89a52c;
+    color: #fc6f14;
     height: 0px;
     border-style: solid;
     border-width: 6px;
@@ -436,7 +441,7 @@ hr {
 
 /*VÄNSTREBLOCK/SIDONAVIGATION*/
 .wrapper1 {
-    background-color: #fff;
+    background-color: #fc6f14;
     min-width: 15%;
     min-height: 100%;
     margin: 0 auto;
@@ -450,7 +455,7 @@ hr {
     min-width: 100%;
     min-height: 100%;
     float: none;
-    background-color: #89a52c;
+    background-color: #fc6f14;
     font-weight: 450;
     padding-left: 1%;
     line-height: 3em;
@@ -473,7 +478,7 @@ hr {
     min-width: 100%;
     min-height: 100%;
     float: none;
-    background-color: #89a52c;
+    background-color: #fc6f14;
     font-weight: 450;
     padding-left: 0%;
     line-height: 3em;
@@ -506,7 +511,7 @@ form {
 form input, form textarea {
     font-size: 57%;
 }
-
+/*
 fieldset {
     border: 3px solid;
     border-color: #89a52c;
@@ -525,6 +530,7 @@ legend {
     top: -2px;
     left: 7.55%;
 }
+*/
 
 .wrapper5 {
     margin: 5%;
@@ -543,7 +549,7 @@ footer {
     line-height: 1.75em;
     padding: 0%;
     margin-top: 5%;
-    border: solid #89a52c;
+    border: solid #fc6f14;
     border-width: 10px;
     color: black;
 }
@@ -574,7 +580,7 @@ footer {
     display: block;
     font-size: 0.9em;
     width: 90%;
-    background-color: #89a52c;
+    background-color: #ffcc00;
     padding-right: 25%;
     position: fixed;
     top: 0%;
@@ -594,7 +600,7 @@ footer {
 }
 
 ul li {
-    color: #89a52c;
+    color: #ffcc00;
 }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -605,7 +611,7 @@ ul li {
   
   /* Style navigation menu links */
   .topnav a {
-    color: white;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 36px;
@@ -615,7 +621,7 @@ ul li {
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: #89a52c;
+    background: #ffcc00;
     display: block;
     position: absolute;
     left: 0;
@@ -631,7 +637,7 @@ ul li {
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #89a52c;
+    background-color: #ffcc00;
     color: white;
   } 
 
