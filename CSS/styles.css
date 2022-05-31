@@ -392,22 +392,93 @@ footer {
         padding-top: 0%;
     }
 
+     /* Style the navigation menu */
+ .topnav {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    font-size: 1.1em;
+    width: 90%;
+    background-color: #ffcc00;
+    padding-right: 25%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 96%;
+    padding: 2%;
+    margin: 0%;
+    padding-bottom: 0%;
+    padding-top: 2%;
+    z-index: 1;
+
+  }
+  
+  .current_page_item {
+    border-bottom: none;
+}
+
+ul li {
+    color: #ffcc00;
+}
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 5%;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #ffcc00;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2.4em;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #ffcc00;
+    color: white;
+  } 
+
 
 /*HEADER*/
 
     .logo {
         float:none;
-        max-width: 40%;
+        max-width: 35%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        z-index: 2;
-    }
+        margin-top: 15%;
+        width: 75%;
+/*        z-index: 2;
+*/  }
 
     .banner {
         float:none;
         max-width: 100%;
+        height: 50%;
+        display: none;
     }
 
 /*OMSLAG*/
@@ -416,7 +487,7 @@ footer {
 /*HEADER*/
 header {
     display: inline-block;
-    padding-bottom: 2%;
+    padding-bottom: 0%;
     width: 100%;
 }
 
@@ -426,7 +497,7 @@ hr {
     color: #fc6f14;
     height: 0px;
     border-style: solid;
-    border-width: 6px;
+    border-width: 4px;
     margin-top: 0%;
     max-width: 100%;
 }
@@ -543,8 +614,8 @@ footer {
     width: 95%;
     position: relative;
     text-align: center;
-    justify-content: center;
-    font-size: 175%;
+    /*justify-content: center;
+    */font-size: 175%;
     display: block;
     line-height: 1.75em;
     padding: 0%;
@@ -552,6 +623,7 @@ footer {
     border: solid #fc6f14;
     border-width: 10px;
     color: black;
+    margin-left: 0%;
 }
 
 #footer1 {
@@ -573,72 +645,5 @@ footer {
     text-decoration: none;
 }
 
- /* Style the navigation menu */
- .topnav {
-    overflow: hidden;
-    position: relative;
-    display: block;
-    font-size: 0.9em;
-    width: 90%;
-    background-color: #ffcc00;
-    padding-right: 25%;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    width: 96%;
-    padding: 2%;
-    margin: 0%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    z-index: 1;
-
-  }
-  
-  .current_page_item {
-    border-bottom: none;
-}
-
-ul li {
-    color: #ffcc00;
-}
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 36px;
-    display: block;
-    margin-bottom: 5%;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: #ffcc00;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 2.25em;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #ffcc00;
-    color: white;
-  } 
 
 }
