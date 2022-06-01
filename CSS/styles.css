@@ -18,7 +18,7 @@ body {
     line-height: 1.5em;
     padding: 1.25%;
     max-width: 960px;
-    padding-top: 16.5%;
+    padding-top: 18%;
 }
 
 /*HEADER*/
@@ -32,7 +32,7 @@ header {
 
 .logo {
     float: left;
-    max-width: 15%;
+    max-width: 12%;
     position: relative;
     padding-right: 3%;
     padding-top: 0%;
