@@ -169,7 +169,7 @@ legend {
 }
 
 
-input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset], select {
     padding: 5px 5px;
     background-color: #fc6f14;
     color: white;
@@ -180,11 +180,18 @@ input[type=submit], input[type=reset] {
     font-size: 26px;
 }
 
-.wpbs-form-field-input-1-6-0cacf0c9 {
+.wpbs-form-field-input-1-6-0cacf0c9 select {
     color: black;
+    padding: 5px 5px;
+    background-color: #fc6f14;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 26px;
 }
 
-.menu-21, .wpcf7-select {
+.menu-21, .wpcf7-select, #wpbs-form-submit-1 {
     padding: 5px 5px;
     background-color: #fc6f14;
     color: white;
@@ -629,6 +636,7 @@ footer {
 ul li {
     color: #ffcc00;
     line-height: 1.5em;
+    font-size: 2.75em;
 }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
