@@ -13,11 +13,7 @@
         <?php endif; ?>
     </div>
     <div id="footer2">
-        <?php// if (is_active_sidebar('footer2')) : ?>
-            <div>
-                <?php// dynamic_sidebar('footer2'); ?>
-            </div>
-        <?php// endif; ?>
+
     </div>
 
     <div id="footer3">
@@ -30,7 +26,7 @@
 
 </footer>
 
-        </dic>
+        </div>
 
 
 <!--script for mobile menu-->

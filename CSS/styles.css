@@ -95,11 +95,9 @@ nav {
 
 
 nav ul li {
-/*    background-color: #ffcc00;*/
     padding-bottom: 12.5%;
     color: black;
     border-color: black;
-/*    font-size: 0.5em;*/
 }
 
 
@@ -122,6 +120,7 @@ hr {
     padding: 0%;
     float: left;
     margin-left: -2%;
+    margin-top: -3%;
 }
 
 .container1-1 {
