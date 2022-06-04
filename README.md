@@ -25,7 +25,7 @@ Webbplatsen ska innefatta många olika typer av funktioner som måste vara dynam
 
 ## Fiktivt företag och användningsbehov
 Det fiktiva företaget ”Karlstads Moderna Vandrarhem & Restaurang AB” vill skapa en dynamisk webbplats som en utökad del av sin vandrarhem- och restaurangverksamhet i centrala Karlstad. Företaget grundades år 2018 med en av grundarna är utvecklaren av webbplatsen. Varumärket heter ”Karlstads V&R” är namnet på verksamheten.
-Karlstas V&R vill presentera sin hela sitt utbud av tjänster online där besökare kan boka boende och boka bord samt boka fritidsaktiviteter. Gäster ska även kunna beställa ”Take Aways”. Personalen ska ha tillgång till hela webbplatsen för att ändra priser, tjänster och menyalternativ samt ändra bokningsalternativ. Personalen är icke-teknisk som vill ad-ministrera allt ovanstående via Wordpress-panel. 
+Karlstas V&R vill presentera sin hela sitt utbud av tjänster online där besökare kan boka boende och boka bord samt boka fritidsaktiviteter. Personalen ska ha tillgång till hela webbplatsen för att ändra priser, tjänster och menyalternativ samt ändra bokningsalternativ. Personalen är icke-teknisk som vill ad-ministrera allt ovanstående via Wordpress-panel. 
 
 Företaget vill ha en enklare webbplats till design samt också ha en enklare grafisk design med logotyp. Webbplatsen ska se modern ut med tillgänglighet på olika enheter och skärmstorlekar – i synnerhet mobila enheter eftersom de flesta som befinner sig på plats använder mobilen.
 Tjänster som erbjuds av Modern V&R:
