@@ -1,27 +1,24 @@
 <?php get_header(); ?>
 
 
-<div class="wrapper5">
-    <section>
+<section class="wrapper5">
+    
         <!--wp print out content about the company-->
-        <article>
+        
             <?php
             if (have_posts()) {
                 the_content();
             }
             ?>
-        </article>
+        
         <br>
         <hr>
     </section>
-</div>
 <br>
 
 
-<div class="wrapper5">
-    <section>
+<section class="wrapper5">
         <!--wp print of posts-->
-        <article>
             <h2>Läs det senaste om oss:</h2>
             <?php
             query_posts('posts_per_page=2');
@@ -41,14 +38,13 @@
                         
                         <br><br>
                     <hr>
-                    </article>
+
             <?php
                 }
             }
             ?>
             
     </section>
-</div>
 
 
 
