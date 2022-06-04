@@ -13,11 +13,11 @@
         <?php endif; ?>
     </div>
     <div id="footer2">
-        <?php if (is_active_sidebar('footer2')) : ?>
+        <?php// if (is_active_sidebar('footer2')) : ?>
             <div>
-                <?php/dynamic_sidebar('footer2'); ?>
+                <?php// dynamic_sidebar('footer2'); ?>
             </div>
-        <?php endif; ?>
+        <?php// endif; ?>
     </div>
 
     <div id="footer3">
@@ -29,8 +29,9 @@
     </div>
 
 </footer>
-<?php wp_footer(); ?>
-</div>
+
+        </dic>
+
 
 <!--script for mobile menu-->
 <script >
@@ -45,3 +46,6 @@ function myFunction() {
 </script>
 
 </body>
+
+
+<?php wp_footer(); ?>
