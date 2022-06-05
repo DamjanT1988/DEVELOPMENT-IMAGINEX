@@ -606,11 +606,11 @@ footer {
     }
 
      /* Style the navigation menu */
- .topnav {
+ .topnav  {
     overflow: hidden;
     position: relative;
     display: block;
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 90%;
     background-color: #ffcc00;
     padding-right: 25%;
@@ -624,18 +624,18 @@ footer {
     padding-bottom: 0%;
     padding-top: 2%;
     z-index: 1;
-    line-height: 1.5em;
+    line-height: 1em;
 
   }
+
   
   .current_page_item {
     border-bottom: none;
 }
 
 ul li {
-    color: #ffcc00;
-    line-height: 1.5em;
-    font-size: 2.75em;
+    line-height: 1.2em;
+    font-size: 1.25em;
 }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
