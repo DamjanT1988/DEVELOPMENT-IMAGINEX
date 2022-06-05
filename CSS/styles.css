@@ -351,7 +351,7 @@ footer {
     
     .logo {
         float: left;
-        max-width: 18%;
+        max-width: 14%;
         position: relative;
         padding-right: 3%;
         padding-top: 0%;
@@ -380,6 +380,7 @@ footer {
         right: 51%;
         width: 100vw;
         max-width: 960px;
+        min-height: 30vw;
       } 
     
     .button1 {
