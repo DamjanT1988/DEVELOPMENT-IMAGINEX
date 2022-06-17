@@ -19,15 +19,13 @@
 </head>
 <!--body med flera wrappers-->
 
-
-
 <body>
-<div id="headerbild">
-<a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.svg" class="logo" alt="logotyp av Kalrstads Vandringshem & Restaurang" /></a>
+<div id="bannerupp">
 <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="bannerbild med träd" class="banner">
+<a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.svg" class="logo" alt="logotyp av Kalrstads Vandringshem & Restaurang" /></a>
 </div>
 <div class="wrapperkropp">
-<a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.svg" class="logo2" alt="logotyp av Kalrstads Vandringshem & Restaurang" /></a>
+
     <!--sidhuvud med navigation & logotyp & sökruta med knapp-->
     <header>
       <div class="topnav">
