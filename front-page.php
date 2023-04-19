@@ -312,12 +312,35 @@ width: 100%;
   font-size: 1.3em;
   }
 
-  /*
-  #reload {
-    font-size: 1.3em;
-    max-width: 100%;
+  .send-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    fill: #333;
+    margin: -2%;
+    margin-left: 0px;
+    padding: 1.75%;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #55417D;
+    color: white;
   }
-*/
+
+  .input-wrapper-2 {
+    display: flex;
+    align-items: center;
+    /*margin-top: 5px;*/
+    margin-left: 10px;
+    border: 1px solid #55417D;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    min-width: 95%;
+  }
+
+  #question-input, #question-input-2 {
+    border: 0;
+    min-width: 84%;
+    font-size: 18px;
+  }
 
   h2 {
     font-weight: 700;
