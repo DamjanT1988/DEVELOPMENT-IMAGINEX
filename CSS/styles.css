@@ -35,6 +35,7 @@ header {
 }
 
 #headerbild {
+    display: none;
     margin-bottom: -1.5%;
     text-align: center;
     width: auto;
@@ -44,6 +45,7 @@ header {
 
 /*LOGOTYPE*/ 
 .logo {
+    display: none;
     max-width: 17.5%;
     max-height: 17.5%;
     float: none;
@@ -106,14 +108,14 @@ nav ul li {
 }
 
 
-hr {
-    color: #fc6f14;
+/*hr {
+width: 100%;
+    color: purple;
     height: 0px;
     border-style: solid;
-    border-width: 4px;
+    border-width: 1px;
     margin-top: 0%;
-    max-width: 100%;
-}
+}*/
 
 
 /*SIDE PANEL*/
@@ -413,7 +415,7 @@ header {
         border-color: black;
     }
     
-    
+    /*
     hr {
         color: #fc6f14;
         height: 0px;
@@ -422,6 +424,7 @@ header {
         margin-top: 0%;
         max-width: 100%;
     }
+    */
     
     
     /*VÄNSTREBLOCK/SIDONAVIGATION*/
@@ -710,7 +713,7 @@ header {
 }
 
 
-
+/*
 hr {
     color: #fc6f14;
     height: 0px;
@@ -718,7 +721,7 @@ hr {
     border-width: 4px;
     margin-top: 0%;
     max-width: 100%;
-}
+}*/
 
    /*nav ändras till svart bakgrund & vit textfärg samt fixerad längst upp 
     i fönstret samt längst fram i z-index*/

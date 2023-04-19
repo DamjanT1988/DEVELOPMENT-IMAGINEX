@@ -1,7 +1,11 @@
-<?php get_header(); ?>
+<?php get_header(); 
+require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library?>
+?>
 
 <div class="wrapper5">
     <section>
+
+    
         <!--wp print out posts-->
         <?php
         if (have_posts()) {
@@ -9,6 +13,8 @@
                 the_post();
         ?>
                 <article>
+                    
+
                     <h3><?= the_title(); ?><br><?= get_the_date(); ?></h3>
                     <?php //$content = get_the_content();
                         //echo mb_strimwidth($content, 0, 600, '...'); 
@@ -29,13 +35,9 @@
     </section>
 </div>
 
-<!--script for menu object marking-->
-<script>
-    let nameCurrPage = document.querySelector('[aria-current="page"]');
-    let CurrPage = nameCurrPage.firstChild.nodeValue;
-    document.getElementById("currentPage").innerHTML = CurrPage;
-</script>
 
 
 
 <?php get_footer(); ?>
+
+

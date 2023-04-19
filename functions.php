@@ -19,6 +19,8 @@ $args = array(
     'uploads' => true
 );
 
+session_start();
+
 add_theme_support('custom-header', $args);
 
 //active wdiget area

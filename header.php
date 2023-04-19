@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<meta name="description" content="<?php //bloginfo("description"); ?>"-->
   <title><?php bloginfo('name'); ?></title>
-  <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP-SMALL.png" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +17,6 @@
   <?php wp_head(); ?>
 </head>
 <!--body med flera wrappers-->
-
 
 
 <body>
@@ -71,3 +69,57 @@
 
 
     </div>
+
+
+
+    <?php    
+require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+//HAS TO BE AFTER HEADER HTML/WP CODE
+
+
+    $client = OpenAI::client('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');
+    $input = $_POST['question'];
+    //$input = 'OK?';
+  
+  //  error_reporting(E_ALL);
+  //  ini_set('display_errors', 1);
+    
+  
+//  echo "FUNKAR INNAN --";
+  
+  $response = $client->chat()->create([
+    'model' => 'gpt-3.5-turbo',
+    'max_tokens' => 100,
+    'messages' => [
+        ['role' => 'user', 'content' => $input],
+    ],
+  ]);
+  
+  $output = '';
+  //print_r($response);
+  
+    foreach ($response->choices as $result) {
+    $result->index; // 0
+    $result->message->role; // 'assistant'
+    $output = $result->message->content; // '\n\nHello there! How can I assist you today?'
+    $result->finishReason; // 'stop'
+  }
+  
+echo "<p id='api2'> " . $output . " </p>";
+
+  
+//var_dump($input);
+//var_dump($response);
+//var_dump($output);
+
+
+//  echo " -- FUNKAR EFTER - FUNCTIONS";
+//  $output = $response->getMessages()[0]->getContent();
+
+  $_SESSION['errorinlogg'] = "Fel inloggningsuppgifter";
+
+}
+?>
