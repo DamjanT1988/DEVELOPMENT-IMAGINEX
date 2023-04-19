@@ -338,7 +338,7 @@ width: 100%;
 
   #question-input, #question-input-2 {
     border: 0;
-    min-width: 84%;
+    min-width: 88%;
     font-size: 18px;
   }
 
@@ -371,7 +371,7 @@ $(document).ready(function() {
     $('#response').html('Bearbetar.. Vänta..');
 
     // Get the input value from the form
-    var input = "(Svara primärt på svenska)" + $('#question-input').val();
+    var input = "(Svara primärt på svenska) (håll ditt svar till max 150 ord)" + $('#question-input').val();
 
     $('.input-wrapper-2', ).css('display', 'inline-flex');
 

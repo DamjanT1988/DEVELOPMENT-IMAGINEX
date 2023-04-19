@@ -370,7 +370,7 @@
 
   #question-input, #question-input-2, #question-input-3 {
     border: 0;
-    min-width: 84%;
+    min-width: 88%;
     font-size: 18px;
   }
 
@@ -417,7 +417,7 @@ $(document).ready(function() {
     $('#response').html('Bearbetar.. Vänta..');
 
     // Get the input value from the form
-    var input = 'Använd endast denna information (nämn inte det i svaret): ' + wrapper5Text + ' Frågan är: ' + $('#question-input').val();
+    var input = 'Använd endast denna information (nämn inte det i svaret) (håll ditt svar till max 150 ord): ' + wrapper5Text + ' Frågan är: ' + $('#question-input').val();
     console.log(input);
 
   // Call the OpenAI API using AJAX

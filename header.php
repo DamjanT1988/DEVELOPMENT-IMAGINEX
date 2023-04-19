@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   $response = $client->chat()->create([
     'model' => 'gpt-3.5-turbo',
-    'max_tokens' => 100,
+    'max_tokens' => 300,
     'messages' => [
         ['role' => 'user', 'content' => $input],
     ],
