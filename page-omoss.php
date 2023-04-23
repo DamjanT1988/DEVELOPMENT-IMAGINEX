@@ -427,7 +427,7 @@ $.ajax({
   data: {
     'question': input
   },
-  timeout: 10000, // Set the timeout to 10 seconds (10000 milliseconds)
+  timeout: 20000, // Set the timeout to 20 seconds (20000 milliseconds)
   
   success: function(response) {
     // Clear the timeout message if the response is successful
@@ -445,10 +445,10 @@ $.ajax({
   error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
       // Display the timeout message
-      $('#response').html('<p>ChatGPT fungerar inte just nu.<br> försök lite senare</p>');
+      $('#response').html('ChatGPT fungerar inte just nu.<br> försök lite senare');
     } else {
       // Handle other errors
-      $('#response').html('<p>Det uppstod ett fel vid anslutning<br> till API. </p>');
+      $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
     }
   }
 });
@@ -546,7 +546,7 @@ $('#openai-form-3').submit(function(event) {
 
 // Set a timer to display the timeout message after 10 seconds
 var timeoutMessage = setTimeout(function() {
-  $('#response').html('<p>ChatGPT fungerar inte just nu.<br> Försök lite senare</p>');
+  $('#response').html('ChatGPT fungerar inte just nu.<br> Försök lite senare');
 }, 10000);
 
 
