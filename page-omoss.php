@@ -106,7 +106,7 @@
     margin: 0;
     padding: 0;
   }
-
+/*
   hr {
     width: 100%;
     color: purple;
@@ -115,6 +115,7 @@
     border-width: 0.75px;
     margin-top: 0%;
 }
+*/
 
 #reload {
     border: 1px solid #ccc;

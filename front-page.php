@@ -112,16 +112,16 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     margin: 0;
     padding: 0;
   }
-
+/*
   hr {
-width: 100%;
+    width: 100%;
     color: purple;
     height: 0px;
     border-style: solid;
     border-width: 0.75px;
     margin-top: 0%;
 }
-
+*/
 /*2nd*/
 /*
 #openai-form-2 {
@@ -369,11 +369,11 @@ $(document).ready(function() {
     var user2 = $('#question-input').val();
     $('#question-input-old').html(user2);
     $('#response').html('Bearbetar.. Vänta..');
+    $('.input-wrapper-2', ).css('display', 'inline-flex');
 
     // Get the input value from the form
     var input = "(Svara primärt på svenska) (håll ditt svar till max 150 ord)" + $('#question-input').val();
 
-    $('.input-wrapper-2', ).css('display', 'inline-flex');
 
     // Call the OpenAI API using AJAX
     $.ajax({

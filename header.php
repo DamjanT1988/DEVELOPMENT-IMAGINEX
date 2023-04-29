@@ -119,7 +119,7 @@ echo "<p id='api2'> " . $output . " </p>";
 //  echo " -- FUNKAR EFTER - FUNCTIONS";
 //  $output = $response->getMessages()[0]->getContent();
 
-  $_SESSION['errorinlogg'] = "Fel inloggningsuppgifter";
+  //$_SESSION['errorinlogg'] = "Fel inloggningsuppgifter";
 
 }
 ?>
