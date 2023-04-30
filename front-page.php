@@ -357,8 +357,8 @@ $(document).ready(function() {
   $('#openai-form').submit(function(event) {
     // Prevent the form from being submitted the traditional way
     event.preventDefault();
-
     var user2 = $('#question-input').val();
+
     //check if the input is empty
     if (user2 == "") {
       return;
@@ -369,16 +369,16 @@ $(document).ready(function() {
     var user2 = $('#question-input').val();
     $('#question-input-old').html(user2);
     $('#response').html('Bearbetar.. Vänta..');
-    $('.input-wrapper-2', ).css('display', 'inline-flex');
+    //$('.input-wrapper-2', ).css('display', 'inline-flex');
 
     // Get the input value from the form
-    var input = "(Svara primärt på svenska) (håll ditt svar till max 150 ord)" + $('#question-input').val();
+    var input = "(Svara primärt på svenska) (håll ditt svar till max 150 ord)" + user2;
 
 
     // Call the OpenAI API using AJAX
     $.ajax({
       type: 'POST',
-      url: '',  // replace with the name of your PHP file
+     // url: '',  // replace with the name of your PHP file
       data: {
         'question': input
       },
@@ -389,7 +389,6 @@ $(document).ready(function() {
   
     // Display the message in the HTML page
     $('#response').html(message);
-
     $('.user2-2').css('display', 'inline-flex');
 }
     });
@@ -416,7 +415,7 @@ $(document).ready(function() {
 
     // Get the input value from the form
   var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-  prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + $('#question-input-2').val();
+  prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user3;
     //var input = $('#question-input-2').val();
 
     /*
@@ -430,7 +429,7 @@ $(document).ready(function() {
     // Call the OpenAI API using AJAX
     $.ajax({
       type: 'POST',
-      url: '',  // replace with the name of your PHP file
+//      url: '',  // replace with the name of your PHP file
       data: {
         'question': input
       },
@@ -460,6 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     floatingBox.classList.add('show');
   }, 1000); // Show the box after 3 seconds
+
 
   toggleBox.addEventListener('click', function() {
         floatingBox.classList.toggle('show');
