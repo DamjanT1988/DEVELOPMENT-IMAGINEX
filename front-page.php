@@ -71,7 +71,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     <form id="openai-form">
     <div id="question-input-old"></div>
       <div class="input-wrapper">
-        <input type="text" id="question-input" name="question" placeholder="Frågan...">
+        <input type="text" id="question-input" name="question" placeholder="  Frågan...">
         <button type="submit" class="send-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -5 25 35" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 2L11 13"></path>
@@ -95,7 +95,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   <form id="openai-form-2">
   <div id="question-input-old-2"></div>
       <div class="input-wrapper-2">
-              <input type="text" id="question-input-2" name="question-2" placeholder="Fråga en sista gång...">
+              <input type="text" id="question-input-2" name="question-2" placeholder="  Fråga en sista gång...">
         <button type="submit" class="send-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -5 25 35" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 2L11 13"></path>
@@ -122,21 +122,28 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     padding: 0;
   }
 
+  h2 {
+    margin-top: -13px;
+    margin-bottom: 2px;
+    font-size: 17px;
+    color: #55417D;
+  }
+
   /*2nd*/
   #question-input-old-2 {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: 10px;
   }
 
+  /*
 .input-wrapper-2 {
     display: flex;
     align-items: center;
-    /*margin-top: 5px;*/
     margin-left: 10px;
     border: 1px solid #55417D;
-    /*border-radius: 5px;*/
     background-color: #FFFFFF;
   }
+*/
 
   #question-input-2 {
     border: 0;
@@ -179,6 +186,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   /*justify-content: center;*/
   font-size: 0.8em;
   margin-right: 5px;
+  color: #55417D;
   }
 
   #my-floating-box.show {
@@ -186,7 +194,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
 }
 
 #question-input-old {
-  margin-top: 7px;
+  margin-top: 8px;
   margin-left: 10px;
 }
 
@@ -208,17 +216,33 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   border-bottom: 1px solid purple;
 }
 */
-  .input-wrapper {
+/*
+  .input-wrapper, .input-wrapper-2  {
     display: flex;
-    /*align-items: center;*/
-    /*margin-top: 5px;*/
     margin-left: 10px;
     border: 1px solid #55417D;
     border-radius: 1px;
     background-color: #FFFFFF;
     min-width: 95%;
-    /*max-width: 50&;*/
+
   }
+*/
+
+.input-wrapper, .input-wrapper-2  {
+  display: flex;
+  margin-left: 10px;
+  border: 1px solid #A891FF;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+  min-width: 95%;
+}
+
+::placeholder  {
+  color: #55417D;
+  opacity: 1;
+  font-size: 13px;
+  /*padding-left: 10px;*/
+}
 
   #question-input {
     border: 0;
@@ -270,14 +294,14 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   justify-content: center;
   position: absolute;
   top: -3px;
-  left: 0%;
+  right: 5%;
   }
 
     /*c2*/
     #toggle-symbol {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   width: 10%;
   cursor: pointer;
 }
@@ -288,7 +312,13 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
 
 
   @media (max-width: 600px) {
-  #my-floating-box {
+    h2 {
+    margin-top: -28px;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+    #my-floating-box {
     position: fixed;
     top: 85%;
     bottom: 30px;
@@ -324,9 +354,15 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   justify-content: center;
   position: absolute;
   top: -3px;
-  left: 0%;
+  right: 2%;
   font-size: 1.3em;
   }
+
+      /*c2*/
+      #toggle-symbol {
+  width: 33%;
+  cursor: pointer;
+}
 
   .send-icon {
     background: none;
@@ -357,18 +393,6 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     border: 0;
     min-width: 88%;
     font-size: 18px;
-  }
-
-    /*c2*/
-    #toggle-symbol {
-  width: 25%;
-  cursor: pointer;
-}
-
-
-  h2 {
-    font-weight: 700;
-    font-size: 1.1em;
   }
 }
 
@@ -409,13 +433,25 @@ $(document).ready(function() {
       },
    
     success: function(response) {
+          // Clear the timeout message if the response is successful
+    //clearTimeout(timeoutMessage);
     // Extract the message from the response HTML
     var message = $(response).find('#api2').text();
   
     // Display the message in the HTML page
     $('#response').html(message);
     $('.user2-2').css('display', 'inline-flex');
-}
+},
+error: function(jqXHR, textStatus) {
+    if (textStatus === 'timeout') {
+      // Display the timeout message
+      $('#response').html('ChatGPT fungerar inte just nu.<br> försök lite senare');
+    } else {
+      // Handle other errors
+      $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
+    }
+  }
+
     });
   });
 
