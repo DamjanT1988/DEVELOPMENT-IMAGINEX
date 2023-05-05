@@ -145,7 +145,7 @@ width: 100%;
 
 
 /*FORM*/
-input {
+/*input {
     font-size: 0.85em;
 }
 
@@ -155,7 +155,7 @@ form {
     width: 100%;
     font-size: 1.2em;
 }
-
+*/
 
 fieldset {
     border: 3px solid;
@@ -253,19 +253,19 @@ h1 {
     margin-left: 22%;
 }
 
-h2 {
+/*h2 {
     font-size: 1.25em;
-}
+}*/
 
 h3 {
     font-size: 1em;
 }
-
+/*
 p, h1, h2, h3, nav {
     font-family: Arial, sans-serif;
     font-weight: bolder;
     line-height: 1.5em;
-}
+}*/
 
 /*LINKS*/
 
@@ -460,7 +460,7 @@ header {
     }
     
     /*KONTAKTSIDAN*/
-    
+   /* 
     form {
         display: block;
         padding-bottom: 2.5%;
@@ -504,7 +504,8 @@ header {
         font-size: 1.2em;
     }
     
-    
+    */
+
     /*ALLA SIDOR*/
     .wrapper5 {
         margin-left: 30%;
@@ -790,15 +791,15 @@ h1 {
     text-align: center;
     
 }
-
+/*
 h2 {
     font-size: 1.4em;;
-}
+}*/
 
 h3 {
     font-size: 1.25em;;
 }
-
+/*
 form {
     display: block;
     padding-bottom: 2.5%;
@@ -809,7 +810,7 @@ form {
 form input, form textarea {
     font-size: 57%;
 }
-
+*/
 .wrapper5 {
     margin: 5%;
     font-size: 1.75em;

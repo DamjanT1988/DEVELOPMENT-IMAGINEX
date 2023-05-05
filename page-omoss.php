@@ -353,7 +353,7 @@
     fill: #333;
     margin: -2%;
     margin-left: 0px;
-    padding: 1.75%;
+    /*padding: 1.75%;*/
     border-radius: 6px 6px 6px 6px;
     background-color: #55417D;
     color: white;
@@ -439,7 +439,7 @@ $.ajax({
     $('.user2-2').css('display', 'inline-flex');
   },
 
-/*  error: function(jqXHR, textStatus) {
+  error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
       // Display the timeout message
       $('#response').html('ChatGPT fungerar inte just nu.<br> försök lite senare');
@@ -448,7 +448,7 @@ $.ajax({
       $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
     }
   }
-  */
+  
 });
 
 
@@ -540,13 +540,12 @@ $('#openai-form-3').submit(function(event) {
  });
 
 
-//cycle2 - maybe 20 seconds is suitable
+//cycle2 - maybe 15 seconds is suitable
 // Set a timer to display the timeout message after 10 seconds
-/*
 var timeoutMessage = setTimeout(function() {
   $('#response').html('ChatGPT fungerar inte just nu.<br> Försök lite senare');
-}, 10000);
-*/
+}, 15000);
+
 
 });
 });
@@ -574,11 +573,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 });
-/*
+
 //relaod
 function reloadPage() {
             location.reload();
         }
-*/
+
 
 </script>

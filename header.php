@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 //  echo "FUNKAR INNAN --";
   
   $response = $client->chat()->create([
-    'model' => 'gpt-3.5-turbo',
+    'model' => 'gpt-4',
     'max_tokens' => 300,
     'messages' => [
         ['role' => 'user', 'content' => $input],
