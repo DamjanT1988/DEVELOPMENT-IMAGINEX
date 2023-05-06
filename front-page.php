@@ -76,7 +76,6 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
         <img src=" data:image/png;base64,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" alt="User 2 send image" class="send-image">
       </div>
     </form>
-    
   </div>
    
 <div class="user user1" id="user1-hidden">
@@ -94,7 +93,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
               <input type="text" id="question-input-2" name="question-2" placeholder="  Fråga en sista gång...">
         <button type="submit" class="send-icon">
         </button>
-                  <img src=" data:image/png;base64,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" alt="User 2 send image" class="send-image">
+                  <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAA/CAYAAABDyo4+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAr1SURBVHhe7Vpnc1vXEV2CIEGAvfdOsZOiWCSKpCLKpmVHVjKTNsmfyUz+Qn6AZ/IlM55kJo4jTxQVWzKLxSr23nvvvWfPPoAGSIIPhPhoJoMjQgAuLl45d/dsuXD73aM/HpMLdqEzP7tgBy6CVOAiSAUuglTgIkgFLoJU4CJIBS6CVOAiSAUuglTgIkgFDtdiPr5G8vU3kbePF79zUwbp7Fdl5NwjHtPxBWf68bNzJvHQ2dGzgzZvzQe0Htvb3aetzV3aWNuio6NTX7YDhwjSuesoNTOWcu4kUXxyBL9XCLK5YX5jeXuMD5S/k0k2r5UneYGXJ5/hzzxmjZPjnXzRap71mPxntRDmOTKXXywtrNHY4Ax1tY3S7s6eQySpEuSu11F6djw9qMil3MIUMnh5sP1YLMgWZ27NzpFth/ndOfPO/arN4NkZJyNnPlKu7GD/kJbm16ihppvqq3toZnJR+fgCqBLk6amniqeFVPZxLiWmRjHz+7QwuyIroPCkkGX18gRubrYDp98DyvfOGT8Z4hfKny1k7NSo+a2Ov2xiKfD2McqCWmN7a5eG+qbo7395w5Y0Yh61D1WCDAYP+sUfyqj4QSZFxYXQ1sYOdbWO0OTYPK2zLyswX6rV9dqQwS8x41yCLF80f2SZcTJXPrKMMizD8mx7Xi+jgbXSi/wCvCkiKoiCQvyEKGvssxUtL67TF3/+hprr+syj9qFKkIeHnkoeZVP5Z3coKy9Rxppqe+n7Fy3U+EMvHR0e8Yi9Q1jdmJbg0+BM8UnhlJWfRAXFaZSQEkkmb4PyuRV2tvdodGiWvvziNXW2DJtH7cM9K/Hhn8yv7eCYVX+bTdWT/AO9+eEjphsU4ks+fkaanVriVTlgohQhtH1gTLuHh4c7RUQH0e2iW/Tx5wVUUp7Di5hA4ZFB5GXylIs4OjoinU7JZg4ODmluZoVefl1HQ71TEtHUoEoQn4P9dk9C5N7eAXka9BQQ5CsEgSwP1qhdXhWsDC5Aa8DlA/ncSanRlH0nkfLu3qKcgmTKzE2gaJYAL5OB1le3aGJ0jq93XxYWXnDIlj4+MsdW30MN1d20urQhY2pwwIIUwG/nZ5aFKORD/uznIeEBlMBhf5fHNte3ZUUcOell4c5phpFvHBYMHUzLiqPih1lU8lE2ZbNLhUUE0BGvJPKbqbFF6u+aoLHhOQ4wCpkINPOzq0LM2xfNfB+rDi+mwwQBiGCTo/O0vLBOBqOHrBguPDYxTEhb4VVZW968UpIg1n7+3pSWHcc6mE8VTwroPpMTk8Dn5OSVDVyCRXvTIH33/D19/7KFBjlKFT/M5NwthkXbJGQ8/0ct1VZ20ezkkrido3AoUTwNRIlEFsHcwmQRcF8/k+jUUP8U1fFFIMrNcyrgLJB7GU1eLLQRlHQriuJ4AcIiAyk41F8WQs/aAzcaHpimkf5ptpZZsZC1lU0K4Tn3y7PE9QKCfGiJLf/dmw7Oe7ol8kIKLoNLWZAFsCRcDCwG7HoZPcWUwzm0mryVsLrHc0AaxNQR6HRuIv4RMcGULPqSRHlFKXSbFwHWg2PDEuZZZAd6JqijeZhaGwao/f0Q9XZO0AoTgTn5xam8aDnkz+QgX8McRFwkhZclB3DKgixACQIXe/zLIioqzZCVhmiPcRhtqOmhb//dJCu9z+JujygIqAcLv4mPEx0XKqlEJkei5LQodi8dHTIp0DgkpoMceTqZGFgoRNjiynq9u1jLZ7+6x9aTTSFh/rTJ+VrVq1ZxOSSGzuKDCAIQQiHYuLGfPb5N6TnxQtzS/Cr1sVg+/6qWJjh6wOqsAW2B+MKNMnLj+ZFAUbEhUhQj8iBaYsVHBrh2ah0Wi0EtBavcYbKQWsB8cf6gYF96+vsStrYUsSKQ+upZI9VXdbHbT0tgcRYfTBCAmw3ki0xOi6bCkjTKvJ3ALucn1oNkDKG1hwvEleUNcUdEndjEcIrjxC4yOphvKlAiIjoF2xwJkauMDc3QGBM7M7FIs9PLNMePvV3Ot6wEFuTAaovKMsRyQsP9aY3P2dY4SFWvWyUhRHT9EDilQecBNc7i3CptrO+IyHqzFsHUcfOwCNRHcCeQiNCcfy+VCu6ncfYbIdqDEmZqfIH6u1lf3g/S+9o+aq0fEHeF1kF/rN0UiwKLwzEecJ2I0gLRrLNlhEN5C1veNKcdO+bZzuNKLOg0cOF3WZOe/KaYs20T3wxC8Tav6IyUAIh6GIOGHLCrzHDo7WYLa3rXR6OD07TKAeAiuLGgI2H8/LclnD1nc8gPlWPVfNtOla9aRLivCpoQBP0ICvGnlPRoEXC4E6pq6JAXP+Nmlhc3qKdjlHo7xkSjEI7hDjs8BxpiD7AcZPHln96hwtJ0iokPk3qwvqabar5rp77O8SuxHAuuzMWsAQIgsLAE9GAQYZDHIKMd6Jmk5vp+iXIdvNL9HLJhQSfRTqWJBeuEe5Z+lENRMSHi2l1twxyx2iQPg4hfJTTrSUMzVlmU2xoHRFssQF7y6lkDvf6mkSPTkOgWiHEEaF8gPwI5EHico797nKrZcrrbR/h8F7umM9C4ae/GWa9ewr4FI4MzEpkuk+5bUMQuVVaRS6lZsZL79HaOUTXrTn1VtxTUWkBTgiDEqNkQvRCBsOLIsNG0ugyQQjz6eb4UqLFcg8GtWhr6JZT3tI86nK07A20tiAlClw+1ExrkSNhOh2s1IFVAWwM9cWwYQN8GuidFc3pZkJFbaQltLYj/GTkxhAUh0iAJVDqQ6kC0QuKIOgxJILQHbjXKLlrHGXJ9dZc04LWG5i7mJQ0rd1n5TQ6/eHYESDZz8pNlswAlBAByfmBBhmshq74OaOxinNCxBUGoQczWhmMNNdR2IOXh4zzJpeCWKFTf/KdZkkCkEFrqjjU0djFoEESaNQgEOWBB6DWlZMSI5aRmxyrdgeFZqczbuQT5kD6TM9DcguBier7JQw7riD72NAiag0Qy8VYk3XuQKY04Iwv8NKcEqMte/queFmZXr81yLNBeg0yGE5G+yIJgKXAnuFVhaZpEvenJRclz0PA6PLxc9LsqaEwQW5BEMUWk7RGEHhCqfGzdpHPU0uv1Yjlvnr+nVs7EpXN5/dwItHUxhkQxtg7Fgs66GDqSyG/QZEcfGT3nmakl2YFo5HptmssUZ7Luq8K1WBASRcWCbKMY+tCRMcFSQnzytJC8fU1S5bdxvfb1l1XSOLPnktcFzTUIYR4a9KOLKWWGp8GDouJCxa3ulmXIZLRU0UPG3tXO9v5PajkWaG9BiGLmML/NBOEZVhUTH0oVTA7KCLgVqvpKJqelvk9c7CaQA2hGEMhxd3eX5hma8xYX0/GY9HSKU6mUcx3sdS1yydDaOEiVnOuMDc1JD+mmQDOCQAqSRDyDLItI+/obpcn+5NfF5MeWg6y4rWmQvvprpTTnZbfiBkE7gmR31CA7DwB6QnAt/BgL/Wo08rF39ZbLh+rXbbIReTrC3QRo62JcfUu9wcD+OsQ4tyCZQiMCpB377m0HNb3rlZ0LWM5PkQiqQTOCcLO46YO9Q7GMwGAfKv80T3rTsBw061/8s076yNgIvKnQjCC0I9CvmefotMU1GKzJmzPmw4Mj6VM/+1sNlxJL19a2cBaa7GpYgB0K/GYHzXT8YGlydIFqKzul+BwfnhNybqJbWUOTfTFrICHEz+TQOoUu4ScoK5wt32S3sobmBP2vQzMN+n+BiyAVuAhSgYsgFbgIUoGLIBW4CFKBi6ALQfRfxtraBvETYs0AAAAASUVORK5CYII=" alt="User 2 send image" class="send-image">
       </div>
     </form>
     </div>
@@ -189,8 +188,8 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   right: 0;
 }
 
-#question-input-old {
-  margin-top: 8px;
+#question-input-old, #question-input-old-2 {
+  margin-top: 13px;
   margin-left: 10px;
 }
 
@@ -198,7 +197,7 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     display: flex;
     /*align-items: flex-start;*/
     margin-bottom: 6px;
-    border-bottom: 1px solid #55417D;
+    border-bottom: 1px solid lightgray;
     padding-bottom: 13px; 
   }
 /*
@@ -227,11 +226,11 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
 .input-wrapper, .input-wrapper-2  {
   display: flex;
   margin-left: 10px;
-  margin-top: -1px;
-  border: 1px solid lightgray;
-  border-radius: 1px;
+  margin-top: -6px;
+  border: 1px solid #55417D;
+  border-radius: 2px;
   background-color: #FFFFFF;
-  min-width: 99%;
+  width: 215px;
 }
 
 ::placeholder  {
@@ -241,9 +240,9 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
   /*padding-left: 10px;*/
 }
 
-  #question-input {
+  #question-input, #question-input-2 {
     border: 0;
-    min-width: 96%;
+    min-width: 100%;
     font-size: 18px;
     /*max-width: 88%;*/
   }
@@ -262,11 +261,26 @@ require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
     cursor: pointer;
     /*fill: #333;*/
     /*margin: -2%;*/
-    margin-left: 0px;
-    border-radius: 6px 6px 6px 6px;
+    /*margin-left: 0px;
+    border-radius: 6px 6px 6px 6px;*/
     /*background-color: #55417D;
     color: white;*/
+    /*height: 40px;*/
+    z-index: 999;
+    padding-right: 35px;
   }
+
+  
+  .send-image {
+  /*cursor: pointer;*/
+  width: 50px;
+  height: 40px;
+  margin: -1px;
+  margin-left: -45px;
+  background-color: #55417D;
+  border-radius: 6px 6px 6px 6px;
+  position: relative;
+}
 
   #response, #chatgpt-message {
     font-weight: 700;
@@ -395,7 +409,7 @@ img {
   width: 50px;
   height: 40px;
   margin: -1px;
-  margin-left: -55px;
+  margin-left: -65px;
   background-color: #55417D;
   border-radius: 6px 6px 6px 6px;
   position: relative;
@@ -411,14 +425,15 @@ img {
     border-radius: 5px;
     background-color: #FFFFFF;
     /*width: 90%;*/
-    width: 250px;
+    width: 255px;
     /*width: 300px;*/
+    margin-top: -5px;
   }
 
   #question-input, #question-input-2 {
     border: 0;
     min-width: 100%;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
