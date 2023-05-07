@@ -442,7 +442,7 @@ $.ajax({
   error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
       // Display the timeout message
-      $('#response').html('ChatGPT fungerar inte just nu.<br> försök lite senare');
+      $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
     } else {
       // Handle other errors
       $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
@@ -491,7 +491,16 @@ $('#openai-form-2').submit(function(event) {
     $('#response-2').html(message);
 
     $('.user2-3').css('display', 'inline-flex');
-}
+},
+error: function(jqXHR, textStatus) {
+    if (textStatus === 'timeout') {
+      // Display the timeout message
+      $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
+    } else {
+      // Handle other errors
+      $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
+    }
+  }
     });
  });
 
@@ -535,7 +544,16 @@ $('#openai-form-3').submit(function(event) {
     $('#response-3').html(message);
 
     $('#reload').css('display', 'inline-block');
-}
+},
+error: function(jqXHR, textStatus) {
+    if (textStatus === 'timeout') {
+      // Display the timeout message
+      $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
+    } else {
+      // Handle other errors
+      $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
+    }
+  }
     });
  });
 
@@ -543,7 +561,7 @@ $('#openai-form-3').submit(function(event) {
 //cycle2 - maybe 15 seconds is suitable
 // Set a timer to display the timeout message after 10 seconds
 var timeoutMessage = setTimeout(function() {
-  $('#response').html('ChatGPT fungerar inte just nu.<br> Försök lite senare');
+  $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
 }, 15000);
 
 

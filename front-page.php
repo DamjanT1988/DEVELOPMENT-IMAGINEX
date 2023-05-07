@@ -353,7 +353,7 @@ img {
     height: 33%;
     max-height: 40%; 
   overflow-y: auto; 
-  overflow-x: hidden;/**/
+  overflow-x: hidden;/**/ 
   display: flex;
   flex-direction: column;
   /*justify-content: center;*/
@@ -475,8 +475,9 @@ $(document).ready(function() {
       },
    
     success: function(response) {
-          // Clear the timeout message if the response is successful
-    //clearTimeout(timeoutMessage);
+    // Clear the timeout message if the response is successful
+    clearTimeout(timeoutMessage);
+
     // Extract the message from the response HTML
     var message = $(response).find('#api2').text();
   
@@ -487,7 +488,7 @@ $(document).ready(function() {
 error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
       // Display the timeout message
-      $('#response').html('ChatGPT fungerar inte just nu.<br> försök lite senare');
+      $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
     } else {
       // Handle other errors
       $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
@@ -495,6 +496,14 @@ error: function(jqXHR, textStatus) {
   }
 
     });
+
+//cycle2 
+// Set a timer to display the timeout message after 20-30 seconds
+
+var timeoutMessage = setTimeout(function() {
+  $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
+}, 20000);
+
   });
 
   $('#openai-form-2').submit(function(event) {
@@ -538,16 +547,36 @@ error: function(jqXHR, textStatus) {
       },
    
     success: function(response) {
-    // Extract the message from the response HTML
+// Clear the timeout message if the response is successful
+clearTimeout(timeoutMessage);
+
+      // Extract the message from the response HTML
     var message = $(response).find('#api2').text();
   
     // Display the message in the HTML page
     $('#response-2').html(message);
 
     //$('.user2-2').css('display', 'inline-flex');
-}
+},
+error: function(jqXHR, textStatus) {
+    if (textStatus === 'timeout') {
+      // Display the timeout message
+      $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
+    } else {
+      // Handle other errors
+      $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
+    }
+  }
     });
+
+    //cycle2 
+// Set a timer to display the timeout message after 20-30 seconds
+var timeoutMessage = setTimeout(function() {
+  $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
+}, 20000);
+
   });
+
 
 });
 

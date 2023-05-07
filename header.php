@@ -74,13 +74,15 @@
 
     <?php    
 require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
+// Include the config.php file
+require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 //HAS TO BE AFTER HEADER HTML/WP CODE
 
 
-    $client = OpenAI::client('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');
+    $client = OpenAI::client(API_KEY);
     $input = $_POST['question'];
     //$input = 'OK?';
   
