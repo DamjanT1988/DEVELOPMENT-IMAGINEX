@@ -329,19 +329,19 @@ img {
 
 
   @media (max-width: 600px) {
-    h2 {
+    /*h2 {
     margin-top: -28px;
     font-weight: 700;
     font-size: 1.1em;
-  }
+  }*/
 
     #my-floating-box {
     position: fixed;
     top: 85%;
     bottom: 30px;
     right: -310px;
-    max-width: 340px;
-    min-width: 340px;
+    max-width: 357px;
+    min-width: 357px;
     border-radius: 10px;
     background-color: #FFFFFF;
     box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
@@ -350,9 +350,10 @@ img {
     padding-top: -4px;
     z-index: 998;
     transition: right 0.5s ease-in-out;
-    height: 25%;
+    height: 33%;
     max-height: 40%; 
   overflow-y: auto; 
+  overflow-x: hidden;/**/
   display: flex;
   flex-direction: column;
   /*justify-content: center;*/
@@ -425,7 +426,7 @@ img {
     border-radius: 5px;
     background-color: #FFFFFF;
     /*width: 90%;*/
-    width: 255px;
+    width: 272px;
     /*width: 300px;*/
     margin-top: -5px;
   }
