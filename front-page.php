@@ -117,7 +117,7 @@ require_once 'vendor/autoload.php';
 <!--*****************CSS CODE********************-->
 <style>
 /***** MAIN *****/
-  body {
+body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -125,7 +125,7 @@ require_once 'vendor/autoload.php';
 
 /*** 1ST FORM ***/
 /*FLOATING BOX*/
-  #my-floating-box {
+#my-floating-box {
     position: fixed;
     top: 75%;
     bottom: 30px;
@@ -150,7 +150,7 @@ require_once 'vendor/autoload.php';
     padding-top: 11px;
   }
 
-  #my-floating-box.show {
+#my-floating-box.show {
   right: 0;
 }
 
@@ -184,7 +184,7 @@ require_once 'vendor/autoload.php';
 }
 
 /*USER BLCOK*/
-  .user {
+.user {
     display: flex;
     margin-bottom: 6px;
     border-bottom: 1px solid lightgray;
@@ -220,14 +220,14 @@ require_once 'vendor/autoload.php';
 }
 
 /*ICONS AND IMAGES*/
-  .favicon {
+.favicon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-top: 10.5px;
   }
 
-  .send-icon {
+.send-icon {
     background: none;
     border: none;
     cursor: pointer;
@@ -236,7 +236,7 @@ require_once 'vendor/autoload.php';
   }
   
   /*C2*/
-  .send-image {
+.send-image {
   width: 50px;
   height: 40px;
   margin: -1px;
@@ -315,14 +315,14 @@ require_once 'vendor/autoload.php';
 }
 
 /*ICONS AND IMAGES*/
-  .send-icon {
+.send-icon {
     cursor: pointer;
     margin-left: -15px;
     z-index: 999;
   }
 
   /*C2*/
-  .send-image {
+.send-image {
   width: 50px;
   height: 40px;
   margin: -1px;
@@ -333,7 +333,7 @@ require_once 'vendor/autoload.php';
 }
 
 /*INPUT FIELD*/
-  .input-wrapper, .input-wrapper-2 {
+.input-wrapper, .input-wrapper-2 {
     display: flex;
     margin-left: 10px;
     border: 1px solid #55417D;
@@ -343,7 +343,7 @@ require_once 'vendor/autoload.php';
     margin-top: -5px;
   }
 
-  #question-input, #question-input-2 {
+#question-input, #question-input-2 {
     border: 0;
     min-width: 100%;
     font-size: 20px;
