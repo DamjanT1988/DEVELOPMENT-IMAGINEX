@@ -18,8 +18,6 @@ require_once 'vendor/autoload.php';
         <hr>
     </section>
 <br>
-
-
 <section class="wrapper5">
         <!--wp print of posts-->
             <h2>Läs det senaste om oss:</h2>
@@ -49,8 +47,10 @@ require_once 'vendor/autoload.php';
             
     </section>
 
-<!--MAIN CHAT BOX CODE-->
 
+<!--*********************MAIN CHAT BOX CODE*********************-->
+
+<!--*****************HTML CODE********************-->
 <!--TOGGLE SYMBOL MINIMIZED-->
 <div id="toggle-symbol">
    <img src=" data:image/png;base64,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">
@@ -113,8 +113,9 @@ require_once 'vendor/autoload.php';
 
           </div>
 
-<style>
 
+<!--*****************CSS CODE********************-->
+<style>
 /***** MAIN *****/
   body {
     font-family: 'Montserrat', sans-serif;
@@ -140,13 +141,13 @@ require_once 'vendor/autoload.php';
     transition: right 0.5s ease-in-out;
     height: 45%;
     max-height: 90%; 
-  overflow-y: auto; 
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8em;
-  margin-right: 5px;
-  color: #55417D;
-  padding-top: 11px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    margin-right: 5px;
+    color: #55417D;
+    padding-top: 11px;
   }
 
   #my-floating-box.show {
@@ -169,6 +170,7 @@ require_once 'vendor/autoload.php';
   right: 6%;
   }
 
+   /*C2*/
   #toggle-symbol {
   position: fixed;
   bottom: 12px;
@@ -206,7 +208,7 @@ require_once 'vendor/autoload.php';
   font-size: 13px;
 }
 
-  #question-input, #question-input-2 {
+#question-input, #question-input-2 {
     border: 0;
     min-width: 100%;
     font-size: 18px;
@@ -233,6 +235,7 @@ require_once 'vendor/autoload.php';
     padding-right: 35px;
   }
   
+  /*C2*/
   .send-image {
   width: 50px;
   height: 40px;
@@ -262,8 +265,8 @@ require_once 'vendor/autoload.php';
 
 /****** MOBILE MODE <600PX *******/
   @media (max-width: 600px) {
-    /*FLOATING BOX*/
-    #my-floating-box {
+/*FLOATING BOX*/
+#my-floating-box {
     position: fixed;
     top: 85%;
     bottom: 30px;
@@ -280,11 +283,11 @@ require_once 'vendor/autoload.php';
     transition: right 0.5s ease-in-out;
     height: 33%;
     max-height: 40%; 
-  overflow-y: auto; 
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.1em;
+    overflow-y: auto; 
+    overflow-x: hidden; /**/
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
   }
 
   /*TOGGLES*/
@@ -304,6 +307,7 @@ require_once 'vendor/autoload.php';
   font-size: 1.3em;
   }
 
+  /*C2*/
   #toggle-symbol {
   width: 25%;
   cursor: pointer;
@@ -317,6 +321,7 @@ require_once 'vendor/autoload.php';
     z-index: 999;
   }
 
+  /*C2*/
   .send-image {
   width: 50px;
   height: 40px;
@@ -347,136 +352,118 @@ require_once 'vendor/autoload.php';
 
 </style>
 
+<!--*****************JS CODE********************-->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
 
+/*ON LOAD*/
 $(document).ready(function() {
+  /***FIRST FORM***/
   $('#openai-form').submit(function(event) {
-    // Prevent the form from being submitted the traditional way
+    //Prevent the form from being submitted the traditional way
     event.preventDefault();
+    //Get the input data using the form ID
     var user2 = $('#question-input').val();
 
-    //check if the input is empty
+    //Check if the input is empty
     if (user2 == "") {
       return;
     }
 
+    //Display the user's message on the web page
     $('#user1-hidden').css('display', 'flex');
     $('.input-wrapper', ).css('display', 'none');
     var user2 = $('#question-input').val();
     $('#question-input-old').html(user2);
     $('#response').html('Bearbetar.. Vänta..');
-    //$('.input-wrapper-2', ).css('display', 'inline-flex');
 
-    // Get the input value from the form
+    //Get the input value from the form
     var input = "(Svara primärt på svenska) (håll ditt svar till max 150 ord)" + user2;
 
-
-    // Call the OpenAI API using AJAX
+    //Call the OpenAI API using AJAX
     $.ajax({
       type: 'POST',
-     // url: '',  // replace with the name of your PHP file
       data: {
         'question': input
       },
    
-    success: function(response) {
-    // Clear the timeout message if the response is successful
+    //Return answer from OpenAI API
+  success: function(response) {
+
+    //Clear the timeout message if the response is successful
     clearTimeout(timeoutMessage);
 
-    // Extract the message from the response HTML
+    //Extract the message from the response HTML
     var message = $(response).find('#api2').text();
   
-    // Display the message in the HTML page
+    //Display the message in the HTML page
     $('#response').html(message);
     $('.user2-2').css('display', 'inline-flex');
 },
-error: function(jqXHR, textStatus) {
+
+  //Handle errors and callbacks
+  error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
-      // Display the timeout message
+      //Display the timeout message
       $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
     } else {
-      // Handle other errors
+      //Handle other errors
       $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
     }
   }
+});
 
-    });
-
-//cycle2 
-// Set a timer to display the timeout message after 20-30 seconds
-
+//C2 
+//Set a timer to display the timeout message after 20-30 seconds
 var timeoutMessage = setTimeout(function() {
   $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
 }, 20000);
 
-  });
+});
 
+
+/***SECOND FORM***/
   $('#openai-form-2').submit(function(event) {
-    // Prevent the form from being submitted the traditional way
     event.preventDefault();
-
     var user3 = $('#question-input-2').val();
 
-    //check if empty
     if (user3 == "") {
       return;
     }
 
     $('#user1-2-hidden').css('display', 'flex');
-    //$('#user1-2').css('display', 'flex');
     $('.input-wrapper-2', ).css('display', 'none');
     var prevQuestion = $('#question-input-old').html();
     var prevAnswer = $('#response').html();
     $('#question-input-old-2').html(user3);
     $('#response-2').html('Bearbetar.. Vänta..');
 
-    // Get the input value from the form
   var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
   prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user3;
-    //var input = $('#question-input-2').val();
 
-    /*
-    console.log(input);
-    console.log(prevQuestion);
-    console.log(prevAnswer);
-    */
-
-//    $('.input-wrapper-2', ).css('display', 'inline-flex');
-
-    // Call the OpenAI API using AJAX
-    $.ajax({
+  $.ajax({
       type: 'POST',
-//      url: '',  // replace with the name of your PHP file
       data: {
         'question': input
       },
    
-    success: function(response) {
-// Clear the timeout message if the response is successful
-clearTimeout(timeoutMessage);
+  success: function(response) {
+    clearTimeout(timeoutMessage);
 
-      // Extract the message from the response HTML
     var message = $(response).find('#api2').text();
   
-    // Display the message in the HTML page
     $('#response-2').html(message);
-
-    //$('.user2-2').css('display', 'inline-flex');
 },
-error: function(jqXHR, textStatus) {
+
+  error: function(jqXHR, textStatus) {
     if (textStatus === 'timeout') {
-      // Display the timeout message
       $('#response').html('AI:n fungerar inte just nu.<br> Försök lite senare...');
     } else {
-      // Handle other errors
       $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
     }
   }
     });
 
-    //cycle2 
-// Set a timer to display the timeout message after 20-30 seconds
 var timeoutMessage = setTimeout(function() {
   $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
 }, 20000);
@@ -486,51 +473,46 @@ var timeoutMessage = setTimeout(function() {
 
 });
 
-
+/***EVENT LISTENERS***/
 document.addEventListener('DOMContentLoaded', function() {
+  //Set none in Display, hide user blocks on load
   $('.user2-2').css('display', 'none');
   $('.user1-2').css('display', 'none');
-
-  //c3
+  //C2
+  //Hide chat symbol on load
   $('#toggle-symbol').css('display', 'none');
 
+  //Save selected boxes in variables
   var floatingBox = document.getElementById('my-floating-box');
   var toggleBox = document.getElementById('toggle-box');
-
-  //c2
+  //C2
+  //Save selected symbol in variable
   var toggleSymbol = document.getElementById('toggle-symbol');
 
+  //Show the box after 1 second
   setTimeout(function() {
     floatingBox.classList.add('show');
-  }, 1000); // Show the box after 3 seconds
+  }, 1000); 
 
-
+  //Interact with toggle button - full visible chat
   toggleBox.addEventListener('click', function() {
+    //Hide the box
     $('#my-floating-box').css('display', 'none');
+    //Show the symbol
     $('#toggle-symbol').css('display', 'block');
-        /*floatingBox.classList.toggle('show');
-        if (floatingBox.classList.contains('show')) {
-          toggleBox.textContent = 'Dölj';
-        } else {
-          toggleBox.textContent = 'Visa';
-        }*/
 
-      //c2
+  //C2
+  //Interact with toggle symbol - minimized chat
   toggleSymbol.addEventListener('click', function() {
-        //toggleSymbol.classList.toggle('show');
+    //Show the box
     $('#my-floating-box').css('display', 'block');
+    //Hide the symbol
     $('#toggle-symbol').css('display', 'none');
-      });
-
-
-
-      });
-
-
+    });
+  });
 });
 
 </script>
-
 
 
 <?php get_footer(); ?>
