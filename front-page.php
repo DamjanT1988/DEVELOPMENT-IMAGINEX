@@ -212,7 +212,7 @@ require_once 'vendor/autoload.php';
     font-size: 18px;
   }
 
-  #question-input-old{
+  #question-input-old, #question-input-old-2{
   margin-top: 13px;
   margin-left: 10px;
 }
@@ -244,7 +244,7 @@ require_once 'vendor/autoload.php';
 }
 
 /*BOT USER BLOCK*/
-  #response, #chatgpt-message {
+  #response, #response-2, #chatgpt-message {
     font-weight: 700;
     max-width: 400px;
     margin-top: 15px;
@@ -255,26 +255,7 @@ require_once 'vendor/autoload.php';
     display: none;
   }
 
-  /*** 2ND FORM ***/
-  #question-input-old-2 {
-    margin-top: 13px;
-    margin-left: 10px;
-  }
-
-  #question-input-2 {
-    border: 0;
-    min-width: 88%;
-    font-size: 18px;
-  }
-
-  #response-2, #chatgpt-message {
-    font-weight: 700;
-    margin-top: 7px;
-    max-width: 400px;
-    margin-left: 10px;
-  }
-
-  #user2-2-hidden, #user1-2-hidden {
+  #user1-2-hidden {
     display: none;
   }
 
