@@ -118,37 +118,37 @@ require_once 'vendor/autoload.php';
 <style>
 /***** MAIN *****/
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
   }
 
 /*** 1ST FORM ***/
 /*FLOATING BOX*/
 #my-floating-box {
-    position: fixed;
-    top: 75%;
-    bottom: 30px;
-    right: -285px;
-    max-width: 300px;
-    min-width: 300px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
-    transform: translate(0, -50%);
-    padding: 20px;
-    z-index: 998;
-    transition: right 0.5s ease-in-out;
-    height: 45%;
-    max-height: 90%; 
-    overflow-y: auto; 
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8em;
-    margin-right: 5px;
-    color: #55417D;
-    padding-top: 11px;
-  }
+  position: fixed;
+  top: 75%;
+  bottom: 30px;
+  right: -285px;
+  max-width: 300px;
+  min-width: 300px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
+  transform: translate(0, -50%);
+  padding: 20px;
+  z-index: 998;
+  transition: right 0.5s ease-in-out;
+  height: 45%;
+  max-height: 90%; 
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  margin-right: 5px;
+  color: #55417D;
+  padding-top: 11px;
+}
 
 #my-floating-box.show {
   right: 0;
@@ -156,11 +156,11 @@ body {
 
 /*TOGGLE BUTTON AND SYMBOL*/
 #toggle-box {
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding: 2px 4px;
-    cursor: pointer;
-    border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
   background-color: #55417D;
   color: white;
   max-width: 8%;
@@ -168,10 +168,10 @@ body {
   position: absolute;
   top: -3px;
   right: 6%;
-  }
+}
 
-   /*C2*/
-  #toggle-symbol {
+  /*C2*/
+#toggle-symbol {
   position: fixed;
   bottom: 12px;
   right: 12px;
@@ -185,11 +185,11 @@ body {
 
 /*USER BLCOK*/
 .user {
-    display: flex;
-    margin-bottom: 6px;
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 13px; 
-  }
+  display: flex;
+  margin-bottom: 6px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 13px; 
+}
 
 /*INPUT FIELD*/
 .input-wrapper, .input-wrapper-2  {
@@ -209,31 +209,31 @@ body {
 }
 
 #question-input, #question-input-2 {
-    border: 0;
-    min-width: 100%;
-    font-size: 18px;
-  }
+  border: 0;
+  min-width: 100%;
+  font-size: 18px;
+}
 
-  #question-input-old, #question-input-old-2{
+#question-input-old, #question-input-old-2{
   margin-top: 13px;
   margin-left: 10px;
 }
 
 /*ICONS AND IMAGES*/
 .favicon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-top: 10.5px;
-  }
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 10.5px;
+}
 
 .send-icon {
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 999;
-    padding-right: 35px;
-  }
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  padding-right: 35px;
+}
   
   /*C2*/
 .send-image {
@@ -247,56 +247,56 @@ body {
 }
 
 /*BOT USER BLOCK*/
-  #response, #response-2, #chatgpt-message {
-    font-weight: 700;
-    max-width: 400px;
-    margin-top: 15px;
-    margin-left: 10px;
-  }
+#response, #response-2, #chatgpt-message {
+  font-weight: 700;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
 
-  #user1-hidden {
-    display: none;
-  }
+#user1-hidden {
+  display: none;
+}
 
-  #user1-2-hidden {
-    display: none;
-  }
+#user1-2-hidden {
+  display: none;
+}
 
 
 /****** MOBILE MODE <600PX *******/
   @media (max-width: 600px) {
 /*FLOATING BOX*/
 #my-floating-box {
-    position: fixed;
-    top: 85%;
-    bottom: 30px;
-    right: -310px;
-    max-width: 357px;
-    min-width: 357px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
-    transform: translate(0, -50%);
-    padding: 8px;
-    padding-top: -4px;
-    z-index: 998;
-    transition: right 0.5s ease-in-out;
-    height: 33%;
-    max-height: 40%; 
-    overflow-y: auto; 
-    overflow-x: hidden; /**/
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1em;
-  }
+  position: fixed;
+  top: 85%;
+  bottom: 30px;
+  right: -310px;
+  max-width: 357px;
+  min-width: 357px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
+  transform: translate(0, -50%);
+  padding: 8px;
+  padding-top: -4px;
+  z-index: 998;
+  transition: right 0.5s ease-in-out;
+  height: 33%;
+  max-height: 40%; 
+  overflow-y: auto; 
+  overflow-x: hidden; /**/
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
 
-  /*TOGGLES*/
-  #toggle-box {
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding: 2px 4px;
-    cursor: pointer;
-    border-radius: 7px 7px 7px 7px;
+/*TOGGLES*/
+#toggle-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 7px 7px 7px 7px;
   background-color: #55417D;
   color: white;
   max-width: 15%;
@@ -305,10 +305,10 @@ body {
   top: -3px;
   right: 2%;
   font-size: 1.3em;
-  }
+ }
 
-  /*C2*/
-  #toggle-symbol {
+/*C2*/
+#toggle-symbol {
   width: 25%;
   cursor: pointer;
   z-index: 997;
@@ -316,10 +316,10 @@ body {
 
 /*ICONS AND IMAGES*/
 .send-icon {
-    cursor: pointer;
-    margin-left: -15px;
-    z-index: 999;
-  }
+  cursor: pointer;
+  margin-left: -15px;
+  z-index: 999;
+}
 
   /*C2*/
 .send-image {
@@ -334,22 +334,23 @@ body {
 
 /*INPUT FIELD*/
 .input-wrapper, .input-wrapper-2 {
-    display: flex;
-    margin-left: 10px;
-    border: 1px solid #55417D;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    width: 272px;
-    margin-top: -5px;
-  }
-
-#question-input, #question-input-2 {
-    border: 0;
-    min-width: 100%;
-    font-size: 20px;
-  }
+  display: flex;
+  margin-left: 10px;
+  border: 1px solid #55417D;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  width: 272px;
+  margin-top: -5px;
 }
 
+#question-input, #question-input-2 {
+  border: 0;
+  min-width: 100%;
+  font-size: 20px;
+}
+
+}
+/*END CSS*/
 </style>
 
 <!--*****************JS CODE********************-->
