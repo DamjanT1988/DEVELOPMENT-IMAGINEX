@@ -72,37 +72,36 @@
 
 
 
-    <?php    
-require_once 'vendor/autoload.php'; // Path to the OpenAI PHP library
-// Include the config.php file
+    <?php   
+    
+//***** MAIN CHAT BOX CODE *****/
+//Path to the OpenAI PHP library
+require_once 'vendor/autoload.php'; 
+//Include the config.php file
 require 'config.php';
 
+//Start the session
+//HAS TO BE AFTER HEADER HTML/WP CODE
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-//HAS TO BE AFTER HEADER HTML/WP CODE
-
-
+    //Save client to variable
     $client = OpenAI::client(API_KEY);
+    //Save input to variable
     $input = $_POST['question'];
-    //$input = 'OK?';
   
-  //  error_reporting(E_ALL);
-  //  ini_set('display_errors', 1);
-    
+    //Send the request to the API
+    $response = $client->chat()->create([
+      'model' => 'gpt-4',
+      'max_tokens' => 300,
+      'messages' => [
+          ['role' => 'user', 'content' => $input],
+      ],
+    ]);
   
-//  echo "FUNKAR INNAN --";
+    //Clear the variable
+    $output = '';
   
-  $response = $client->chat()->create([
-    'model' => 'gpt-4',
-    'max_tokens' => 300,
-    'messages' => [
-        ['role' => 'user', 'content' => $input],
-    ],
-  ]);
-  
-  $output = '';
-  //print_r($response);
-  
+    //Loop through the response
     foreach ($response->choices as $result) {
     $result->index; // 0
     $result->message->role; // 'assistant'
@@ -110,18 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result->finishReason; // 'stop'
   }
   
-echo "<p id='api2'> " . $output . " </p>";
-
-  
-//var_dump($input);
-//var_dump($response);
-//var_dump($output);
-
-
-//  echo " -- FUNKAR EFTER - FUNCTIONS";
-//  $output = $response->getMessages()[0]->getContent();
-
-  //$_SESSION['errorinlogg'] = "Fel inloggningsuppgifter";
-
+  //Print the output
+  echo "<p id='api2'> " . $output . " </p>";
 }
 ?>
