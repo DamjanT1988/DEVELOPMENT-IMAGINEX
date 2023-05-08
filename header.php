@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Send the request to the API
     $response = $client->chat()->create([
       'model' => 'gpt-4',
-      'max_tokens' => 300,
+      'max_tokens' => 300, //less tokens
       'messages' => [
           ['role' => 'user', 'content' => $input],
       ],
@@ -104,8 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Loop through the response
     foreach ($response->choices as $result) {
     $result->index; // 0
-    $result->message->role; // 'assistant'
-    $output = $result->message->content; // '\n\nHello there! How can I assist you today?'
+    $result->message->role; // user
+    $output = $result->message->content; //content of the message
     $result->finishReason; // 'stop'
   }
   
