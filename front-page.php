@@ -319,7 +319,6 @@ body {
   z-index: 999;
 }
 
-  /*C2*/
 .send-image {
   width: 50px;
   height: 40px;
@@ -372,7 +371,7 @@ $(document).ready(function() {
     //Display the user's message on the web page
     $('#user1-hidden').css('display', 'flex');
     $('.input-wrapper', ).css('display', 'none');
-    var user2 = $('#question-input').val();
+  
     $('#question-input-old').html(user2);
     $('#response').html('Bearbetar.. Vänta..');
 
