@@ -425,13 +425,12 @@ $(document).ready(function() {
           $('#response').html('Det uppstod ett fel vid anslutning<br> till API.');
         }
       }
-  
+    });
     //C2 
     //Set a timer to display the timeout message after 20-30 seconds
     var timeoutMessage = setTimeout(function() {
       $('#response').html('Just nu tar det lite längre tid för AI att svara. Vänligen vänta..');
     }, 20000);
-
 
 });
 
@@ -506,7 +505,7 @@ $(document).ready(function() {
 
 
 /***THIRD FORM***/
-$('#openai-form-3').submit(function(event) {
+  $('#openai-form-3').submit(function(event) {
     event.preventDefault();
     var user4 = $('#question-input-3').val();
 
@@ -522,8 +521,8 @@ $('#openai-form-3').submit(function(event) {
     $('#question-input-old-3').html(user4);
     $('#response-3').html('Bearbetar.. Vänta..');
 
-  var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-  prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + $('#question-input-2').val();
+    var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + $('#question-input-2').val();
 
     $.ajax({
       type: 'POST',
@@ -553,13 +552,14 @@ $('#openai-form-3').submit(function(event) {
     }, 20000);
     });
   });
-});
+
+
 
 
 
 /***EVENT LISTENERS***/
 document.addEventListener('DOMContentLoaded', function() {
-    //Set none in Display, hide user blocks on load
+  //Set none in Display, hide user blocks on load
   $('#toggle-symbol').css('display', 'none');//Hide chat symbol on load
   $('#reload').css('display', 'none');
   $('.user2-3').css('display', 'none');
@@ -594,6 +594,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
 //Reload web page for reload button
 function reloadPage() {
