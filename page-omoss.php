@@ -291,8 +291,8 @@ body {
 /*FLOATING BOX*/
 #my-floating-box {
   position: fixed;
-  top: 85%;
-  bottom: 30px;
+  top: 75%;
+  bottom: 120px;
   right: -310px;
   max-width: 340px;
   min-width: 340px;
@@ -304,8 +304,8 @@ body {
   padding-top: -4px;
   z-index: 998;
   transition: right 0.5s ease-in-out;
-  height: 33%;
-  max-height: 40%; 
+  height: 60%;
+  max-height: 65%; 
   overflow-y: auto; 
   overflow-x: hidden; /**/
   display: flex;
@@ -376,7 +376,7 @@ body {
 #question-input, #question-input-2, #question-input-3 {
   border: 0;
   min-width: 100%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 }
