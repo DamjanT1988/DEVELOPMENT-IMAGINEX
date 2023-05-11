@@ -325,7 +325,6 @@ body {
   position: absolute;
   top: -3.4px;
   right: 2.25%;
-  /*left: 300px;*/
   font-size: 1.1em;
  }
 

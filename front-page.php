@@ -275,11 +275,11 @@ body {
 /*FLOATING BOX*/
 #my-floating-box {
   position: fixed;
-  top: 85%;
-  bottom: 30px;
+  top: 75%;
+  bottom: 120px;
   right: -310px;
-  max-width: 349px;
-  min-width: 349px;
+  max-width: 340px;
+  min-width: 340px;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
@@ -288,8 +288,8 @@ body {
   padding-top: -4px;
   z-index: 998;
   transition: right 0.5s ease-in-out;
-  height: 33%;
-  max-height: 40%; 
+  height: 60%;
+  max-height: 65%; 
   overflow-y: auto; 
   overflow-x: hidden; /**/
   display: flex;
@@ -306,11 +306,11 @@ body {
   border-radius: 7px 7px 7px 7px;
   background-color: gray;
   color: white;
-  max-width: 15%;
+  max-width: 11.5%;
   justify-content: center;
   position: absolute;
   top: -3px;
-  right: 2%;
+  right: 2.25%;
   font-size: 1.3em;
  }
 
@@ -329,12 +329,12 @@ body {
 }
 
 .send-image {
-  width: 50px;
-  height: 40px;
+  width: 52px;
+  height: 36px;
   margin: -1px;
-  margin-left: -65px;
+  margin-left: -67px;
   background-color: #55417D;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 4px 4px 4px 4px;
   position: relative;
 }
 
@@ -345,14 +345,14 @@ body {
   border: 1px solid #55417D;
   border-radius: 5px;
   background-color: #FFFFFF;
-  width: 272px;
-  margin-top: -5px;
+  width: 260px;
+  margin-top: -2px;
 }
 
 #question-input, #question-input-2 {
   border: 0;
   min-width: 100%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 }
