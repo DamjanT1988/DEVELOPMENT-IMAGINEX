@@ -152,7 +152,7 @@ body {
 #toggle-box {
   display: inline-block;
   border: 1px solid #ccc;
-  padding: 2px 4px;
+  padding: 4px 5px;
   cursor: pointer;
   border-radius: 5px 5px 5px 5px;
   background-color: gray;
@@ -161,7 +161,7 @@ body {
   justify-content: center;
   position: absolute;
   top: -3px;
-  right: 6%;
+  right: 7%;
 }
 
   /*C2*/
@@ -204,7 +204,7 @@ body {
 .input-wrapper, .input-wrapper-2, .input-wrapper-3  {
   display: flex;
   margin-left: 10px;
-  margin-top: -5px;
+  margin-top: -2px;
   border: 1px solid #55417D;
   border-radius: 2px;
   background-color: #FFFFFF;
@@ -215,7 +215,7 @@ body {
 ::placeholder  {
   color: #55417D;
   opacity: 1;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #question-input, #question-input-2, #question-input-3 {
@@ -225,7 +225,7 @@ body {
 }
 
 #question-input-old, #question-input-old-2, #question-input-old-3 {
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 
@@ -257,12 +257,12 @@ body {
   
   /*C2*/
 .send-image {
-  width: 52px;
-  height: 35px;
+  width: 54px;
+  height: 36px;
   margin: -1px;
   margin-left: -45px;
   background-color: #55417D;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 4px 4px 4px 4px;
   position: relative;
 }
 
@@ -270,7 +270,7 @@ body {
 #response, #response-2, #response-3, #chatgpt-message {
   font-weight: 700;
   max-width: 400px;
-  margin-top: 5.5px;
+  margin-top: 8.5px;
   margin-left: 10px;
 }
 
@@ -294,8 +294,8 @@ body {
   top: 85%;
   bottom: 30px;
   right: -310px;
-  max-width: 357px;
-  min-width: 357px;
+  max-width: 340px;
+  min-width: 340px;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
@@ -317,17 +317,18 @@ body {
 #toggle-box {
   display: inline-block;
   border: 1px solid #ccc;
-  padding: 2px 4px;
+  padding: 3px 4px;
   cursor: pointer;
   border-radius: 7px 7px 7px 7px;
   background-color: gray;
   color: white;
-  max-width: 15%;
+  max-width: 11.5%;
   justify-content: center;
   position: absolute;
-  top: -3px;
-  right: 2%;
-  font-size: 1.3em;
+  top: -3.4px;
+  right: 2.25%;
+  /*left: 300px;*/
+  font-size: 1.1em;
  }
 
 
@@ -351,7 +352,7 @@ body {
   margin: -1px;
   margin-left: -67px;
   background-color: #55417D;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 4px 4px 4px 4px;
   position: relative;
 }
 
@@ -362,14 +363,20 @@ body {
   border: 1px solid #55417D;
   border-radius: 5px;
   background-color: #FFFFFF;
-  width: 272px;
-  margin-top: 0px;
+  width: 260px;
+  margin-top: -2px;
+}
+
+::placeholder  {
+  color: #55417D;
+  opacity: 1;
+  font-size: 16px;
 }
 
 #question-input, #question-input-2, #question-input-3 {
   border: 0;
   min-width: 100%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 }
