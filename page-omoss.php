@@ -252,8 +252,7 @@ body {
   z-index: 999;
   padding-right: 35px;
 }
-  
-  /*C2*/
+
 .send-image {
   width: 54px;
   height: 36px;

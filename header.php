@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Send the request to the API
     $response = $client->chat()->create([
       'model' => 'gpt-4',
-      'max_tokens' => 65, //less tokens
+      'max_tokens' => 95, //less tokens
       'messages' => [
           ['role' => 'user', 'content' => $input],
       ],
