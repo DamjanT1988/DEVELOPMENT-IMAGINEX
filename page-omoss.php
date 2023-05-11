@@ -124,8 +124,8 @@ body {
   top: 75%;
   bottom: 30px;
   right: -285px;
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 310px;
+  min-width: 310px;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 25px 100px 0 rgba(85, 65, 125, 0.4);
@@ -231,7 +231,6 @@ body {
 
 /*ICONS AND IMAGES*/
 .favicon {
-  /*border-radius: 50%;*/
   margin-top: 7px;
 }
 
@@ -239,7 +238,6 @@ body {
 .boticon {
   width: 34px;
   height: 34px;
-  /*border-radius: 5px;*/
 }
 
 .usericon {
