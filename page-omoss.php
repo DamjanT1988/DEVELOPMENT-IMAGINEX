@@ -477,8 +477,7 @@ $(document).ready(function() {
 
     //Set the input value from the form and old answers and questions
     var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + $('#question-input-2').val();
-    //var input = $('#question-input-2').val();
+    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user3;
 
     // Call the OpenAI API using AJAX
     $.ajax({
@@ -537,7 +536,7 @@ $(document).ready(function() {
     $('#response-3').html('Bearbetar.. Vänta..');
 
     var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + $('#question-input-2').val();
+    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user4;
 
     $.ajax({
       type: 'POST',
@@ -567,8 +566,6 @@ $(document).ready(function() {
     }, 20000);
     });
   });
-
-
 
 
 

@@ -366,7 +366,7 @@ body {
 /*ON LOAD*/
 $(document).ready(function() {
   /***FIRST FORM***/
-  $('#openai-form').submit(function(event) {
+$('#openai-form').submit(function(event) {
     //Prevent the form from being submitted the traditional way
     event.preventDefault();
     //Get the input data using the form ID
