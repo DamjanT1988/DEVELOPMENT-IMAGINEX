@@ -208,7 +208,7 @@ body {
   border: 1px solid #55417D;
   border-radius: 2px;
   background-color: #FFFFFF;
-  width: 215px;
+  width: 220px;
   height: 34px;/**/
 }
 
@@ -409,7 +409,7 @@ $(document).ready(function() {
     $('#response').html('Bearbetar.. Vänta..');
 
     //Set the input value from the form and data from element
-    var input = 'Använd endast denna information (nämn inte det i svaret) (håll ditt svar till max 150 ord): ' + wrapper5Text + ' Frågan är: ' + user2;
+    var input = 'Använd endast denna information (nämn inte det i svaret) (skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" : ' + wrapper5Text + ' Svara endast på denna fråga och inget mer: ' + user2;
 
     //Call the OpenAI API using AJAX
     $.ajax({
@@ -475,8 +475,8 @@ $(document).ready(function() {
     $('#response-2').html('Bearbetar.. Vänta..');
 
     //Set the input value from the form and old answers and questions
-    var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user3;
+    var input = "(skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user3;
 
     // Call the OpenAI API using AJAX
     $.ajax({
@@ -534,8 +534,8 @@ $(document).ready(function() {
     $('#question-input-old-3').html(user4);
     $('#response-3').html('Bearbetar.. Vänta..');
 
-    var input = "(Svara primärt på svenska. " + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user4;
+    var input = "(skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user4;
 
     $.ajax({
       type: 'POST',

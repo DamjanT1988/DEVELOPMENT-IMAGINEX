@@ -197,7 +197,7 @@ body {
   border: 1px solid #55417D;
   border-radius: 2px;
   background-color: #FFFFFF;
-  width: 215px;
+  width: 220px;
   height: 34px; /**/ 
 }
 
@@ -384,7 +384,7 @@ $('#openai-form').submit(function(event) {
     $('#response').html('Bearbetar.. Vänta..');
 
     //Set the input value from the form
-    var input = "(Skriv som en kortfattad person med trevlig ton) (Svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 55 ord är nådd) (svara endast på frågan)" + user2;
+    var input = "(Skriv som en kortfattad person med trevlig ton) (Svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd) (svara endast på frågan)" + user2;
 
     //Call the OpenAI API using AJAX
     $.ajax({
@@ -443,7 +443,7 @@ $('#openai-form-2').submit(function(event) {
     $('#question-input-old-2').html(user3);
     $('#response-2').html('Bearbetar.. Vänta..');
 
-    var input = "(Skriv som en kortfattad person med trevlig ton) (Svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 55 ord är nådd) (svara endast på frågan)" + "Agera som en chattbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    var input = "(Skriv som en kortfattad person med trevlig ton) (Svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd) (svara endast på frågan)" + "Agera som en chattbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
     prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt). Min nya fråga: " + user3;
 
   $.ajax({
