@@ -16,6 +16,7 @@
 
 <?php get_footer(); ?>
 
+
 <!--*********************MAIN CHAT BOX CODE*********************-->
 
 <!--*****************HTML CODE********************-->
@@ -409,7 +410,7 @@ $(document).ready(function() {
     $('#response').html('Bearbetar.. Vänta..');
 
     //Set the input value from the form and data from element
-    var input = 'Använd endast denna information (nämn inte det i svaret) (skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" : ' + wrapper5Text + ' Svara endast på denna fråga och inget mer: ' + user2;
+    var input = 'Använd endast denna information (nämn inte det i svaret) (skriv som en hjälpsam men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" : ' + wrapper5Text + ' Svara endast på denna fråga och inget mer: ' + user2;
 
     //Call the OpenAI API using AJAX
     $.ajax({
@@ -454,6 +455,11 @@ $(document).ready(function() {
   $('#openai-form-2').submit(function(event) {
     //Prevent the form from being submitted the traditional way
     event.preventDefault();
+        //Select the element
+        var wrapper5 = document.querySelector('.wrapper5');
+    //Save text content of element
+    var wrapper5Text = wrapper5.textContent;
+
     //Get the input data using the form ID
     var user3 = $('#question-input-2').val();
 
@@ -475,8 +481,8 @@ $(document).ready(function() {
     $('#response-2').html('Bearbetar.. Vänta..');
 
     //Set the input value from the form and old answers and questions
-    var input = "(skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user3;
+    var input = "(skriv som en hjälpsam men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    prevQuestion + ". Du svarade till: " + prevAnswer + " Använd endast denna information (nämn inte det i svaret) : " + wrapper5Text + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user3;
 
     // Call the OpenAI API using AJAX
     $.ajax({
@@ -520,6 +526,8 @@ $(document).ready(function() {
 /***THIRD FORM***/
   $('#openai-form-3').submit(function(event) {
     event.preventDefault();
+    var wrapper5 = document.querySelector('.wrapper5');
+    var wrapper5Text = wrapper5.textContent;
     var user4 = $('#question-input-3').val();
 
     if(user4 == '') {
@@ -534,8 +542,8 @@ $(document).ready(function() {
     $('#question-input-old-3').html(user4);
     $('#response-3').html('Bearbetar.. Vänta..');
 
-    var input = "(skriv som en hjälpfull men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
-    prevQuestion + ". Du svarade till: " + prevAnswer + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user4;
+    var input = "(skriv som en hjälpsam men kortfattad person med trevlig ton) (svara primärt på svenska) (håll ditt svar till max 60 ord i längd och avsluta mening innan 58 ord är nådd)" + "Agera som en chatbot som redan svaret på min följande fråga eller fått följande information av mig: " + 
+    prevQuestion + ". Du svarade till: " + prevAnswer + " Använd endast denna information (nämn inte det i svaret) : " + wrapper5Text + ". Använd informationen i den nya frågan om nödvändigt. Min nya fråga; svara endast på denna fråga och inget mer: " + user4;
 
     $.ajax({
       type: 'POST',
