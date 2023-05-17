@@ -5,8 +5,8 @@ Developer: Damjan Tosic
 ## RELEVANT FILES
 * config.php - API key storage
 * header.php - PHP code for OpenAI API-PHP code
-* page-aichat - HTML, CSS and JS code for general chat box
-* page-faqchat - HTML, CSS and JS code for FAQ chat box
+* page-aichat.php - HTML, CSS and JS code for general chat box
+* page-faqchat.php - HTML, CSS and JS code for FAQ chat box
 
 ## INSTALLATION
 The process of implementing solution is straight-forward, taking about 10-15 minutes:
