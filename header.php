@@ -19,6 +19,7 @@
 <!--body med flera wrappers-->
 
 
+
 <body>
 <div id="headerbild">
 <a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/IMAGES/PROFILE/LOGOTYP.svg" class="logo" alt="logotyp av Kalrstads Vandringshem & Restaurang" /></a>
