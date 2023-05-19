@@ -1,6 +1,7 @@
 # PROJECT CHAT BOXES
 For ImagineX AB
 Developer: Damjan Tosic
+NOTE: the solution requires PHP server version 8.1.0 to run.
 
 ## RELEVANT FILES
 * config.php - API key storage
